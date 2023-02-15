@@ -1,0 +1,110 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./reset.css');
+@import url('./task-one.css');
+@import url('./task-two.css');
+@import url('./task-three.css');
+@import url('./task-four.css');
+@import url('./task-five.css');
+@import url('./task-six.css');
+@import url('./task-seven.css');
+@import url('./task-eight.css');
+@import url('./task-nine.css');
+@import url('./task-ten.css');
+@import url('./task-eleven.css');
+@import url('./task-twelve.css');
+@import url('./task-thirteen.css');
+@import url('./task-fourteen.css');
+@import url('./task-fiveteen.css');
+@import url('./task-sixteen.css');
+@import url('./task-seventeen.css');
+@import url('./task-eighteen.css');
+@import url('./task-nineteen.css');
+@import url('./task-twenty.css');
+@import url('./additional-task-one.css');
+@import url('./additional-task-two.css');
+@import url('./additional-task-three.css');
+@import url('./additional-task-four.css');
+@import url('./additional-task-five.css');
+@import url('./additional-task-six.css');
+@import url('./additional-task-seven.css');
+@import url('./additional-task-eight.css');
+
+body{
+  background-color: var(--fon-lemon-color);
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* 1. CSS Color Palette Variables (Палітра кольорів) */
+     :root {
+    --white-color: #FFFFFF;
+    --fon-lemon-color: #FFFDEE;
+    --black-color: #000000;
+    --text-color: #7A7A7A;
+    ---second-text-color: #B4B4B4;
+    --akzent-yellow-colo: #F3C653;
+    --fon-dark-lemon-color: #F0ECD6;
+    --brown-color: #C79002;
+    --footer-color: #0E0C07;  
+}
+
+/* 2. Сommon container standard (Загальний стандарт контейнера) */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid tomato;
+}
+
+
+/* 3. Mobile Container */
+@media screen and (max-width: 1023px){
+    .container {
+        min-width: 320px;
+        max-width: 414px;  
+        padding-left: 15px;
+        padding-right: 15px;
+    }}
+
+
+/* 4. Tablet Container */
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+.container {
+    min-width: 1024px;
+    max-width: 1024px;
+    width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;  
+}}
+
+
+
+/* 5. Desktop Container */
+@media screen and (min-width: 1280px) {
+    .container {
+        min-width: 1024px;
+        max-width: 1024px;
+        width: 1024px; 
+        padding-left: 85px;
+        padding-right: 85px;  
+    }}
+
+
+
+    /* 6. Сovert Header Class For Сrawlers */
+    .visually-hidden {
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+    }
