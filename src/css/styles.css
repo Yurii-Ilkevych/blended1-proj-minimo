@@ -51,7 +51,9 @@ body{
     --akzent-yellow-colo: #F3C653;
     --fon-dark-lemon-color: #F0ECD6;
     --brown-color: #C79002;
-    --footer-color: #0E0C07;  
+    --footer-color: #0E0C07; 
+    --map-adress-color: #E5E5E5;
+ 
 }
 
 /* 2. Сommon container standard (Загальний стандарт контейнера) */
