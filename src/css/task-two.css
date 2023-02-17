@@ -1,16 +1,117 @@
 .home-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../img/task-2/home-hero-bg-img-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 414px;
+  padding: 181px 15px 21px;
 }
+.home-hero {
+  position: relative;
+  text-align: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
+  screen and (min-resolution: 192dpi) and (max-width: 1023px),
+  screen and (min-resolution: 2dppx) and (max-width: 1023px) {
+  .home-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../img/task-2/home-hero-bg-img-mobile@2x.jpg);
+  }
+}
+
 .home-hero-name {
+  font-family: 'Film P3';
+  font-size: 96px;
+  line-height: calc(103 / 96);
+  letter-spacing: 0.3em;
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin-left: 35px;
+  margin-bottom: 24px;
+  
 }
 .home-hero-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  margin-bottom: 40px;
 }
 .home-hero-slogan {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: calc(37 / 32);
+  letter-spacing: 0.05em;
+  color: var(--white-color);
+  margin-bottom: 113px;
 }
 .home-hero-address {
+  position: absolute;
+  top: 64px;
+  right: 15px;
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  color: var(--map-adress-color);
+  width: 210px;
+  height: 47px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  padding: 8px 6px 10px 34px;
+  text-align: left;
+  cursor: pointer;
 }
+.home-hero-address:before {
+  content: url(../img/task-2/map-icon.svg);
+  position: absolute;
+  width: 10px;
+  height: 16px;
+  left: 11px;
+  bottom: 16px;
+}
+
 .home-hero-reservation {
+  margin-top: 113px;
+  margin-bottom: 58px;
 }
 .home-hero-reservation-item {
 }
 .home-hero-reservation-btn {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: var(--akzent-yellow-colo);
+  width: 236px;
+  height: 48px;
+  border: 2px solid var(--white-color);
+  border-radius: 25px;
+  padding: 14px 20px;
+  background: none;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.home-hero-reservation-btn:hover,
+.home-hero-reservation-btn:focus {
+  background: var(--white-color);
+  border: 2px solid var(--akzent-yellow-colo);
+}
+.social-header__list {
+  display: flex;
+  gap: 21px;
+}
+.social__item {
+}
+.social__link {
 }
