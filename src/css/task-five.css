@@ -1,0 +1,27 @@
+.five-first-text {
+    font-family: "FilmP3Bold";
+    text-transform: uppercase;
+    font-size: 64px;
+line-height: 1.08;
+color: #494848;
+;
+letter-spacing: 0.3em;
+}
+
+.five-text{
+    font-family: "TimesNewRomanPSMT";
+    color: #B4B4B4;
+    font-size: 32px;
+line-height: 1.16;
+}
+
+.five-text{
+    font-family: "Montserrat";
+color: var(--text-color);
+    font-size: 16px;
+line-height: 1.25;
+}
+
+.five-brown-color{
+    color: var(--brown-color);
+}
