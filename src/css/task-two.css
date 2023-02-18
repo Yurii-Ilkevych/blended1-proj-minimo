@@ -12,7 +12,6 @@
   padding: 181px 15px 21px;
 }
 .home-hero {
-  
 }
 
 .home-hero-name {
@@ -94,7 +93,6 @@
   border-radius: 25px;
   padding: 14px 20px;
   background: none;
-
 }
 
 .home-hero-reservation-btn:hover,
@@ -128,7 +126,7 @@
     position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../img/task-2/home-hero-bg-img-tablet.jpg);
-   }
+  }
 
   .home-hero-name {
     font-size: 128px;
@@ -166,23 +164,20 @@
     left: 16px;
     bottom: 18px;
   }
-.home-hero-reservation {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  gap: 40px;
-  margin-bottom: 25px;
+  .home-hero-reservation {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: 40px;
+    margin-bottom: 25px;
+  }
+  .home-hero-reservation-item {
+  }
 
-}
-.home-hero-reservation-item {
-}
-
-.social-header-list {
-  display: flex;
-  gap: 22px;
- 
-}
-
+  .social-header-list {
+    display: flex;
+    gap: 22px;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px) and (max-width: 1279px),
@@ -191,5 +186,72 @@
   .home-hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../img/task-2/home-hero-bg-img-tablet@2x.jpg);
+  }
+}
+
+/* --------------------------------Desktop-------------------------------------- */
+
+@media screen and (min-width: 1280px) {
+  .home-hero {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../img/task-2/home-hero-bg-img-desktop.jpg);
+    padding: 164px 15px 65px;
+    height: 720px;
+  }
+
+  .home-hero-name {
+    font-size: 128px;
+    line-height: calc(138 / 128);
+    margin-bottom: 32px;
+  }
+
+  .home-hero-text {
+    margin-bottom: 64px;
+  }
+  .home-hero-slogan {
+    margin-bottom: 144px;
+  }
+
+  .home-hero-address {
+    position: absolute;
+    top: 600px;
+    left: 85px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    width: 285px;
+    height: 56px;
+    padding: 8px 8px 8px 44px;
+  }
+  .home-hero-address:before {
+    content: url(../img/task-2/map-icon.svg);
+    position: absolute;
+    width: 12px;
+    height: 20px;
+    left: 16px;
+    bottom: 18px;
+  }
+  .home-hero-reservation {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: 60px;
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+  .home-hero-reservation-item {
+  }
+
+  .social-header-list {
+    display: none;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .home-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../img/task-2/home-hero-bg-img-desktop@2x.jpg);
   }
 }
