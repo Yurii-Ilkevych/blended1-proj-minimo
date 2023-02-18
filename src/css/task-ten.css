@@ -89,8 +89,8 @@ img {
 }
 .rest-photo-list {
   display: flex;
+  justify-content: end;
   gap: 24px;
-  margin-left: 84px;
   margin-top: 32px;
   margin-bottom: 20px;
   transform: translateX(15px);
@@ -138,6 +138,8 @@ img {
   .rest-box-middle {
     width: 163px;
   }
+  .img-row-bottom {
+   }
 }
 /* -------------------tablet---------------------- */
 @media screen and (min-width: 1024px) {
