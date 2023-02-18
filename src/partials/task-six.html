@@ -2,61 +2,127 @@
 
 <section class="details">
   <div class="details-wrap container">
-    <p class="details-logo">mimiho</p>
     <div class="details-title-text-wrap">
+      <p class="details-logo">mimiho</p>
       <h2 class="details-title">Готель</h2>
       <p class="details-text">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit.
       </p>
     </div>
-    <img
-      class="details-slider"
-      srcset="
-        ../img/task6/Task6slider.png   1x,
-        ../img/task6/Task6slider2x.png 2x
-      "
-      src="../img/task6/Task6slider.png"
-      alt="Photos of the hotel"
-      width="875"
-      height="270"
-    />
-    <div class="slider-mob-wrap">
-      <img
-        class="details-slider-piece"
-        srcset="
-          ../img/task6/piece-mobile.png   1x,
-          ../img/task6/piece-mobile2x.png 2x
-        "
-        src="../img/task6/piece-mobile.png"
-        alt="Photo of the hotel"
-        width="80"
-        height="270"
-      />
-      <img
-        class="details-slider-mob"
-        srcset="
-          ../img/task6/slider-mob.jpg   1x,
-          ../img/task6/slider-mob2x.jpg 2x
-        "
-        src="../img/task6/slider-mob.jpg"
-        alt="Photo of the hotel"
-        width="274"
-        height="270"
-      />
-
-      <div class="details-icon-wrap">
-        <svg class="details-icon" width="30px" height="17px">
-          <use href="../symbol-defs.svg#icon-arrow-left-white"></use>
-        </svg>
-        <svg class="details-icon" width="30px" height="17px">
-          <use href="../symbol-defs.svg#icon-arrow-right-white"></use>
-        </svg>
+    <div class="details-slider-btn-wrap">
+      <div class="details-slider">
+        <div class="details-slider-picture-wrap">
+          <picture class="details-slider-picture">
+            <source
+            media="(min-width: 1280px)"
+            srcset="
+            ../img/task6/slider-tablet-right.jpg    1x,
+            ../img/task6/slider-tablet-right-2x.jpg 2x
+            "
+          />
+            <source
+              media="(min-width: 1024px)"
+              srcset="
+                ../img/task6/slider-tablet-left.jpg    1x,
+                ../img/task6/slider-tablet-left-2x.jpg 2x
+              "
+            />
+            <img
+              src="../img/task6/slider-tablet-left.jpg"
+              alt="Photo of the hotel"
+            />
+          </picture>
+          <picture class="details-slider-picture">
+           
+            <source
+              media="(min-width: 1024px)"
+              srcset="
+                ../img/task6/slider-tablet-center.jpg    1x,
+                ../img/task6/slider-tablet-center-2x.jpg 2x
+              "
+            />
+            <img
+              src="../img/task6/slider-tablet-center.jpg"
+              alt="Photo of the hotel"
+            />
+          </picture>
+          <picture class="details-slider-picture">
+            <source
+            media="(min-width: 1280px)"
+            srcset="
+              ../img/task6/slider-desktop-right.jpg    1x,
+              ../img/task6/slider-desktop-right-2x.jpg 2x
+            "
+          />
+            <source
+              media="(min-width: 1024px)"
+              srcset="
+                ../img/task6/slider-tablet-right.jpg    1x,
+                ../img/task6/slider-tablet-right-2x.jpg 2x
+              "
+            />
+            <img
+              src="../img/task6/slider-tablet-right.jpg"
+              alt="Photo of the hotel"
+            />
+          </picture>
+        </div>
+        <div class="details-icon-wrap">
+          <svg class="details-icon" width="30px" height="17px">
+            <use href="../symbol-defs.svg#icon-arrow-left-white"></use>
+          </svg>
+          <svg class="details-icon" width="30px" height="17px">
+            <use href="../symbol-defs.svg#icon-arrow-right-white"></use>
+          </svg>
+        </div>
       </div>
+      <div class="slider-mob-wrap">
+        <img
+          class="details-slider-piece"
+          srcset="
+            ../img/task6/piece-mobile.png   1x,
+            ../img/task6/piece-mobile2x.png 2x
+          "
+          src="../img/task6/piece-mobile.png"
+          alt="Photo of the hotel"
+          width="80"
+          height="270"
+        />
+        <img
+          class="details-slider-mob"
+          srcset="
+            ../img/task6/slider-mob.jpg   1x,
+            ../img/task6/slider-mob2x.jpg 2x
+          "
+          src="../img/task6/slider-mob.jpg"
+          alt="Photo of the hotel"
+          width="274"
+          height="270"
+        />
+
+        <div class="details-icon-wrap">
+          <svg class="details-icon" width="30px" height="17px">
+            <use href="../symbol-defs.svg#icon-arrow-left-white"></use>
+          </svg>
+          <svg class="details-icon" width="30px" height="17px">
+            <use href="../symbol-defs.svg#icon-arrow-right-white"></use>
+          </svg>
+        </div>
+      </div>
+
+      <ul class="details-btn-list">
+        <li class="details-btn-list-item">
+          <button class="details-btn" type="button">Забронювати номер</button>
+        </li>
+        <li class="details-btn-list-item">
+          <a class="details-link" href="../hotel.html"
+            ><button class="details-btn" type="button">
+              Переглянути ціни
+            </button></a
+          >
+        </li>
+      </ul>
     </div>
-    <button class="details-btn" type="button">Забронювати номер</button>
-    <a class="details-link" href="../hotel.html"
-      ><button class="details-btn" type="button">Переглянути ціни</button></a
-    >
   </div>
 </section>
