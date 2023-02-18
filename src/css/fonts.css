@@ -1,8 +1,8 @@
 /* 'Film P3 700' */
 @font-face { 
     font-family: "Film P3";
-    src: url(./fonts/FilmP3Bold.ttf) format("ttf"), 
-         url(./fonts/FilmP3Bold.woff) format("woff");
+    src: url(../fonts/FilmP3Bold.ttf) format("ttf"), 
+         url(../fonts/FilmP3Bold.woff) format("woff");
     font-weight: bold;
 }
 
