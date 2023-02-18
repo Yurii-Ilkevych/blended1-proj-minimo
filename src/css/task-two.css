@@ -1,16 +1,257 @@
+/* --------------------------------Mobile-------------------------------------- */
+
+.home-hero {
+  position: relative;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../img/task-2/home-hero-bg-img-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 414px;
+  padding: 181px 15px 21px;
+}
 .home-hero {
 }
+
 .home-hero-name {
+  font-family: 'Film P3';
+  font-size: 96px;
+  line-height: calc(103 / 96);
+  letter-spacing: 0.3em;
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  text-indent: 0.3em;
 }
 .home-hero-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  margin-bottom: 40px;
 }
 .home-hero-slogan {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: calc(37 / 32);
+  letter-spacing: 0.05em;
+  color: var(--white-color);
+  margin-bottom: 113px;
 }
+
 .home-hero-address {
+  position: absolute;
+  top: 64px;
+  right: 15px;
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  color: var(--map-adress-color);
+  width: 210px;
+  height: 47px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  padding: 8px 6px 10px 34px;
+  text-align: left;
+  cursor: pointer;
 }
+.home-hero-address:before {
+  content: url(../img/task-2/map-icon.svg);
+  position: absolute;
+  width: 10px;
+  height: 16px;
+  left: 11px;
+  bottom: 16px;
+}
+
 .home-hero-reservation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 58px;
 }
 .home-hero-reservation-item {
 }
 .home-hero-reservation-btn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: var(--akzent-yellow-colo);
+  width: 236px;
+  height: 48px;
+  border: 2px solid var(--white-color);
+  border-radius: 25px;
+  padding: 14px 20px;
+  background: none;
+}
+
+.home-hero-reservation-btn:hover,
+.home-hero-reservation-btn:focus {
+  background: var(--white-color);
+  border: 2px solid var(--akzent-yellow-colo);
+}
+.social-header-list {
+  display: flex;
+  gap: 21px;
+  /* margin: 0; */
+}
+.social-item {
+}
+.social-link {
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
+  screen and (min-resolution: 192dpi) and (max-width: 1023px),
+  screen and (min-resolution: 2dppx) and (max-width: 1023px) {
+  .home-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../img/task-2/home-hero-bg-img-mobile@2x.jpg);
+  }
+}
+
+/* --------------------------------Tablet-------------------------------------- */
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .home-hero {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../img/task-2/home-hero-bg-img-tablet.jpg);
+  }
+
+  .home-hero-name {
+    font-size: 128px;
+    line-height: calc(138 / 128);
+    text-indent: 0.3em;
+    margin-bottom: 16px;
+  }
+
+  .home-hero-text {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    margin-bottom: 56px;
+  }
+  .home-hero-slogan {
+    font-size: 36px;
+    line-height: calc(41 / 36);
+    margin-bottom: 145px;
+  }
+
+  .home-hero-address {
+    position: absolute;
+    top: 600px;
+    left: 47px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    width: 285px;
+    height: 56px;
+    padding: 8px 8px 8px 44px;
+  }
+  .home-hero-address:before {
+    content: url(../img/task-2/map-icon.svg);
+    position: absolute;
+    width: 12px;
+    height: 20px;
+    left: 16px;
+    bottom: 18px;
+  }
+  .home-hero-reservation {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: 40px;
+    margin-bottom: 25px;
+  }
+  .home-hero-reservation-item {
+  }
+
+  .social-header-list {
+    display: flex;
+    gap: 22px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px) and (max-width: 1279px),
+  screen and (min-resolution: 192dpi) and (min-width: 1024px) and (max-width: 1279px),
+  screen and (min-resolution: 2dppx) and (min-width: 1024px) and (max-width: 1279px) {
+  .home-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../img/task-2/home-hero-bg-img-tablet@2x.jpg);
+  }
+}
+
+/* --------------------------------Desktop-------------------------------------- */
+
+@media screen and (min-width: 1280px) {
+  .home-hero {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../img/task-2/home-hero-bg-img-desktop.jpg);
+    padding: 164px 15px 65px;
+    height: 720px;
+  }
+
+  .home-hero-name {
+    font-size: 128px;
+    line-height: calc(138 / 128);
+    margin-bottom: 32px;
+  }
+
+  .home-hero-text {
+    margin-bottom: 64px;
+  }
+  .home-hero-slogan {
+    margin-bottom: 144px;
+  }
+
+  .home-hero-address {
+    position: absolute;
+    top: 600px;
+    left: 85px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    width: 285px;
+    height: 56px;
+    padding: 8px 8px 8px 44px;
+  }
+  .home-hero-address:before {
+    content: url(../img/task-2/map-icon.svg);
+    position: absolute;
+    width: 12px;
+    height: 20px;
+    left: 16px;
+    bottom: 18px;
+  }
+  .home-hero-reservation {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: 60px;
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+  .home-hero-reservation-item {
+  }
+
+  .social-header-list {
+    display: none;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .home-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../img/task-2/home-hero-bg-img-desktop@2x.jpg);
+  }
 }

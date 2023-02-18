@@ -51,7 +51,9 @@ body{
     --akzent-yellow-colo: #F3C653;
     --fon-dark-lemon-color: #F0ECD6;
     --brown-color: #C79002;
-    --footer-color: #0E0C07;  
+    --footer-color: #0E0C07; 
+    --map-adress-color: #E5E5E5;
+ 
 }
 
 /* 2. Сommon container standard (Загальний стандарт контейнера) */
@@ -69,6 +71,7 @@ body{
         max-width: 414px;  
         padding-left: 15px;
         padding-right: 15px;
+        width: 414px;
     }}
 
 
@@ -87,9 +90,9 @@ body{
 /* 5. Desktop Container */
 @media screen and (min-width: 1280px) {
     .container {
-        min-width: 1024px;
-        max-width: 1024px;
-        width: 1024px; 
+        min-width: 1280px;
+        max-width: 1280px;
+        width: 1280px; 
         padding-left: 85px;
         padding-right: 85px;  
     }}
