@@ -5,17 +5,19 @@
   padding-bottom: 32px;
   background-color: var(--fon-lemon-color);
 }
-.container-task-fiveteen {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+
+@media screen and (max-width: 1023px) {
+  .container-task-fiveteen {
+    overflow: hidden;
+  }
 }
+
 .two-adult-text-non {
   font-family: 'Times New Roman', sans-serif;
   font-weight: normal;
   font-size: 20px;
   line-height: 1.15;
-  color: var(--second-text-color);
+  color: var(---second-text-color);
   margin-bottom: 8px;
 }
 .two-adult-logo {
@@ -48,16 +50,19 @@
 }
 
 .two-adult-list-img {
-  position: relative;
-  right: 130px;
-  list-style: none;
   display: flex;
-  gap: 16px;
+  column-gap: 16px;
   margin-bottom: 20px;
+  position: relative;
+  z-index: 5;
+  right: 130px;
 }
 
 .two-adult-room-img {
+  width: 100%;
+  height: 100%;
   max-width: 244px;
+  max-height: 322px;
   margin-left: auto;
   margin-bottom: 32px;
   background: #dadada;
@@ -66,6 +71,7 @@
 }
 
 .two-adult-slider-img {
+  max-width: 194px;
   max-width: 194px;
   background: #dadada;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
@@ -108,6 +114,14 @@
   justify-content: center;
   padding-top: 14px;
   padding-bottom: 14px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.two-adult-item-btn:hover,
+.two-adult-item-btn:focus {
+  background-color: var(--white-color);
+  border-color: var(--akzent-yellow-colo);
 }
 
 .two-adult-item-btn:not(:last-child) {
@@ -135,15 +149,9 @@
   border: none;
 }
 
-@media screen and (min-width: 414px) {
-  .container-task-fiveteen {
-    width: 414px;
-  }
-}
 
 @media screen and (min-width: 1024px) {
   .container-task-fiveteen {
-    width: 960px;
     position: relative;
   }
 
@@ -181,7 +189,7 @@
 
   .two-adult-list-img {
     display: flex;
-    gap: 40px;
+    column-gap: 40px;
     right: 0;
     margin-bottom: 0;
   }
@@ -189,6 +197,7 @@
   .two-adult-room-img {
     position: absolute;
     max-width: 400px;
+    max-height: 524px;
     margin: 0;
     right: 80px;
     top: -96px;
@@ -210,15 +219,16 @@
   }
 }
 
-@media screen and (min-width: 1023px) and (max-width: 1279px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
   .two-adult-list-slider {
     display: none;
   }
 }
 
+
 @media screen and (min-width: 1280px) {
   .container-task-fiveteen {
-    width: 1140px;
+    padding-bottom: 1px;
   }
 
   .one-room-for-two-adult {
@@ -249,20 +259,22 @@
 
   .two-adult-room-img {
     max-width: 460px;
+    max-height: 574px;
   }
 
   .two-adult-img-btn-box {
-    margin-bottom: 40px;
+    margin-bottom: 72px;
   }
 
   .two-adult-list-slider {
     position: absolute;
-    top: 105%;
+    top: 115%;
     left: 40%;
     margin-bottom: 0;
   }
 
   .two-adult-slider-img {
-    max-width: 294px;
+    max-width: 254px;
+    max-height: 254px;
   }
 }
