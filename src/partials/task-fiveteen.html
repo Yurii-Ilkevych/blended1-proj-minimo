@@ -1,117 +1,131 @@
 <!-- Task 15 - The third hotel section "1 room for 2 adult" -->
-<section class="1-room-for-2-adult">
-  <p class="2-adult-text-non">Amet minim mollit non</p>
-  <p class="2-adult-logo">MIMIHO</p>
-  <h2 class="2-adult-title">ДВОМІСНИЙ НОМЕР</h2>
-  <p class="2-adult-text">
-    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-    Velit officia consequat duis enim velit mollit. Exercitation veniam
-    consequat sunt nostrud amet.
-  </p>
-
-  <ul class="2-adult-list-img">
-    <li class="2-adult-item-img">
-      <picture>
-        <source
-          srcset="
-            ./img/task-15/arrangement.jpg    1x,
-            ./img/task-15/arrangement-2x.jpg 2x
-          "
-          media="(min-width: 1280px)"
-        />
-        <source
-          srcset="
-            ./img/task-15/arrangement-mob-tab.jpg    1x,
-            ./img/task-15/arrangement-mob-tab-2x.jpg 2x
-          "
-          media="(min-width: 1024px)"
-        />
-        <source
-          srcset="
-            ./img/task-15/arrangement-mob-tab.jpg    1x,
-            ./img/task-15/arrangement-mob-tab-2x.jpg 2x
-          "
-          media="(min-width: 320px)"
-        />
-        <img
-          src="./img/task-15/arrangement.jpg"
-          alt="bathroom"
-          width="254"
-          height="254"
-        />
-      </picture>
-    </li>
-    <li class="2-adult-item-img">
-      <picture>
-        <source
-          srcset="./img/task-15/cup-tea.jpg 1x, ./img/task-15/cup-tea-2x.jpg 2x"
-          media="(min-width: 1280px)"
-        />
-        <source
-          srcset="
-            ./img/task-15/cup-tea-mob-tab.jpg    1x,
-            ./img/task-15/cup-tea-mob-tab-2x.jpg 2x
-          "
-          media="(min-width: 1024px)"
-        />
-        <source
-          srcset="
-            ./img/task-15/cup-tea-mob-tab.jpg    1x,
-            ./img/task-15/cup-tea-mob-tab-2x.jpg 2x
-          "
-          media="(min-width: 320px)"
-        />
-        <img
-          src="./img/task-15/cup-tea.jpg"
-          alt="cup tea"
-          width="254"
-          height="254"
-        />
-      </picture>
-    </li>
-  </ul>
-  <ul class="2-adult-list-slider">
-    <li class="2-adult-item-slider">
-      <button type="button" class="2-adult-left-btn">
-        <svg width="30" height="17">
-          <use href="./img/task-15/left-rigt-svg.svg#icon-left"></use>
-        </svg>
-      </button>
-    </li>
-    <li class="2-adult-item-slider">
-      <button type="button" class="2-adult-right-btn">
-        <svg width="30" height="17">
-          <use href="./img/task-15/left-rigt-svg.svg#icon-right"></use>
-        </svg>
-      </button>
-    </li>
-  </ul>
-  <picture>
-    <source
-      srcset="./img/task-15/2-adult.jpg 1x, ./img/task-15/2-adult-2x.jpg 2x"
-      media="(min-width: 1280px)"
-    />
-    <source
-      srcset="
-        ./img/task-15/2-adult-tab.jpg    1x,
-        ./img/task-15/2-adult-tab-2x.jpg 2x
-      "
-      media="(min-width: 1024px)"
-    />
-    <source
-      srcset="
-        ./img/task-15/2-adult-mob.jpg    1x,
-        ./img/task-15/2-adult-mob-2x.jpg 2x
-      "
-      media="(min-width: 320px)"
-    />
-    <img
-      src="./img/task-15/2-adult.jpg"
-      alt="1 room for 2 adult"
-      width="780"
-      height="574"
-    />
-  </picture>
-  <a class="2-adult-link" href="./room.html">Детальніше</a>
-  <button class="2-adult-btn" type="button">Переглянути ціни</button>
-</section>
+<section class="one-room-for-two-adult">
+  <div class="container-task-fiveteen">
+    <p class="two-adult-text-non">Amet minim mollit non</p>
+    <p class="two-adult-logo">Mimiho</p>
+    <h2 class="two-adult-title">ДВОМІСНИЙ НОМЕР</h2>
+    <p class="two-adult-text">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+    <picture>
+      <source
+        srcset="./img/task-15/2-adult.jpg 1x, ./img/task-15/2-adult-2x.jpg 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ./img/task-15/2-adult-tab.jpg    1x,
+          ./img/task-15/2-adult-tab-2x.jpg 2x
+        "
+        media="(min-width: 1024px)"
+      />
+      <source
+        srcset="
+          ./img/task-15/2-adult-mob.jpg    1x,
+          ./img/task-15/2-adult-mob-2x.jpg 2x
+        "
+        media="(min-width: 320px)"
+      />
+      <img
+        class="two-adult-room-img"
+        src="./img/task-15/2-adult.jpg"
+        alt="1 room for 2 adult"
+        width="244"
+        height="322"
+      />
+    </picture>
+    <div class="two-adult-img-btn-box">
+      <ul class="two-adult-list-img">
+        <li class="two-adult-item-img">
+          <picture>
+            <source
+              srcset="
+                ./img/task-15/arrangement.jpg    1x,
+                ./img/task-15/arrangement-2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./img/task-15/arrangement-mob-tab.jpg    1x,
+                ./img/task-15/arrangement-mob-tab-2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./img/task-15/arrangement-mob-tab.jpg    1x,
+                ./img/task-15/arrangement-mob-tab-2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="two-adult-slider-img"
+              src="./img/task-15/arrangement.jpg"
+              alt="bathroom"
+              width="194"
+              height="194"
+            />
+          </picture>
+        </li>
+        <li class="two-adult-item-img">
+          <picture>
+            <source
+              srcset="
+                ./img/task-15/cup-tea.jpg    1x,
+                ./img/task-15/cup-tea-2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./img/task-15/cup-tea-mob-tab.jpg    1x,
+                ./img/task-15/cup-tea-mob-tab-2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="
+                ./img/task-15/cup-tea-mob-tab.jpg    1x,
+                ./img/task-15/cup-tea-mob-tab-2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="two-adult-slider-img"
+              src="./img/task-15/cup-tea.jpg"
+              alt="cup tea"
+              width="194"
+              height="194"
+            />
+          </picture>
+        </li>
+      </ul>
+      <ul class="two-adult-list-slider">
+        <li class="two-adult-item-slider">
+          <button type="button" class="two-adult-left-btn">
+            <svg width="32" height="32">
+              <use href="./img/task-15/left-rigt-svg.svg#icon-left"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="two-adult-item-slider">
+          <button type="button" class="two-adult-right-btn">
+            <svg width="32" height="32">
+              <use href="./img/task-15/left-rigt-svg.svg#icon-right"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+      <ul class="two-adult-list-btn">
+        <li class="two-adult-item-btn">
+          <a class="two-adult-link" href="./room.html">Детальніше</a>
+        </li>
+        <li class="two-adult-item-btn">
+          <button class="two-adult-btn" type="button">Переглянути ціни</button>
+        </li>
+      </ul>
+    </div>
+  </div>
