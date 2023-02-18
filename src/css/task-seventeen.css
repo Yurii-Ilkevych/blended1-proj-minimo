@@ -22,21 +22,83 @@
     color: var(--text-color);
 }
 .seventeen-text-last{
+color: var(--brown-color);
+}
+.seventeen-btn-second{
+    display: flex;
+    column-gap: 16px;
+   align-items: center;
+
+   transition-property: color ;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.seventeen-btn-first{
+    font-family: 'Montserrat';
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 42px;
+padding-right: 42px;
+    margin-bottom: 32px;
+   background-color: var(--black-color);
+color: var(--white-color);
+border: 1px solid var(--akzent-yellow-color);
+border-radius: 25px;
+
+transition-property: background-color ;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.seventeen-svg{
+    fill: var(--brown-color);
+    transition-property: fill ;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
+.seventeen-btn-first:hover,
+.seventeen-btn-first:focus{
+   background-color: var(--akzent-yellow-color);
+  
+}
+
+.seventeen-btn-second:hover>.seventeen-text-last,
+.seventeen-btn-second:focus>.seventeen-text-last{
+    color: var(--akzent-yellow-color);
+}
+.seventeen-btn-second:hover>.seventeen-svg,
+.seventeen-btn-second:focus>.seventeen-svg{
+    fill: var(--akzent-yellow-color);
+}
+
+
+
+
 
 
 /* 3. Mobile Container */
 @media screen and (max-width: 1023px){
     .seventeen-container {
-       margin-top: 32px;
-       margin-bottom: 32px;
+       padding-top: 32px;
+       padding-bottom: 32px;
     }
     .seventeen-margin{
         margin-bottom: 32px;
     }
     .seventeen-margin-small{
         margin-bottom: 16px;
+    }
+    .seventeen-btn-second{
+        justify-content: center;
+        column-gap: 12px;
+    }
+    .seventeen-btn-first{
+        margin-bottom: 20px;
     }
 }
 
@@ -46,7 +108,9 @@
 .seventeen-container {
     margin-top: 50px;
     margin-bottom: 40px;
-}}
+}
+
+}
 
 
 
@@ -55,4 +119,6 @@
     .seventeen-container {
         margin-top: 48px ;
         margin-bottom: 48px;
-    }}
+    }
+    
+}
