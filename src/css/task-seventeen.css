@@ -1,0 +1,58 @@
+.seventeen-text-first{
+    font-family: 'Times New Roman';
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 1.16;
+    color: var(--black-color);
+    margin-bottom: 16px;
+}
+.seventeen-text-second{
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.17;
+  color: var(--black-color);
+  margin-bottom: 16px;
+}
+.seventeen-text{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.33;
+    color: var(--text-color);
+}
+.seventeen-text-last{
+
+}
+
+
+/* 3. Mobile Container */
+@media screen and (max-width: 1023px){
+    .seventeen-container {
+       margin-top: 32px;
+       margin-bottom: 32px;
+    }
+    .seventeen-margin{
+        margin-bottom: 32px;
+    }
+    .seventeen-margin-small{
+        margin-bottom: 16px;
+    }
+}
+
+
+/* 4. Tablet Container */
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+.seventeen-container {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}}
+
+
+
+/* 5. Desktop Container */
+@media screen and (min-width: 1280px) {
+    .seventeen-container {
+        margin-top: 48px ;
+        margin-bottom: 48px;
+    }}
