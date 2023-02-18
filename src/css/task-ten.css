@@ -59,10 +59,12 @@ img {
 .img-above-box {
   display: flex;
   justify-content: end;
-}
+ }
 
 .img-row-above {
   display: flex;
+  border-radius: 2px;
+   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 .rest-row-middle {
   display: flex;
@@ -73,10 +75,12 @@ img {
   display: block;
   width: auto;
   height: auto;
+  border-radius: 2px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 .rest-box-middle {
   width: 39vw;
-  margin-top: 102px;
+  margin-top: 70px;
 }
 .text-middle {
   font-family: 'Montserrat';
@@ -104,6 +108,8 @@ img {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 2px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 }
 .rest-slider-list {
   display: flex;
@@ -139,7 +145,7 @@ img {
     width: 163px;
   }
   .img-row-bottom {
-   }
+  }
 }
 /* -------------------tablet---------------------- */
 @media screen and (min-width: 1024px) {
