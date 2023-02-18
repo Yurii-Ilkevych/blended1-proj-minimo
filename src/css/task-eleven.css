@@ -5,7 +5,7 @@
   flex-direction: column;
 }
 .dish-container {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .menu-head-text {
@@ -155,49 +155,49 @@
 
 /* -------------Descktop------------ */
 @media screen and (min-width: 1280px) {
-.rest-menu-container {
+  .rest-menu-container {
     padding-bottom: 60px;
-}
+  }
 
-.menu-head-text {
-  margin-bottom: 40px;
-}
+  .menu-head-text {
+    margin-bottom: 40px;
+  }
 
-.menu-separate-box{
-column-gap: 120px;
-justify-content: space-between;
-}
+  .menu-separate-box {
+    column-gap: 120px;
+    justify-content: space-between;
+  }
 
-.dish-container{
+  .dish-container {
     min-width: 485px;
-}
+  }
 
-.dish-title-subbox {
+  .dish-title-subbox {
     min-width: 485px;
-}
+  }
 
-.dish-text {
+  .dish-text {
     width: 291px;
-}
+  }
 
-.ingridient-box{
+  .ingridient-box {
     max-width: 262px;
-}
+  }
 
-.dish-title{
+  .dish-title {
     font-size: 24px;
-}
-.dish-name {
+  }
+  .dish-name {
     font-size: 16px;
-}
+  }
 
-    .ingridient{
+  .ingridient {
     margin-bottom: 12px;
-}
+  }
 
-.dish-price {
+  .dish-price {
     font-size: 16px;
-}
+  }
 
   /* ------------BTN-------------- */
 
