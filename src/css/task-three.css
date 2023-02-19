@@ -3,7 +3,7 @@
 .home-about-restrong {
   position: relative;
   padding: 15px 0 20px;
-  background: #fffdee;
+  background: var(--fon-lemon-color);
 }
 
 .home-about-restrong-wrap {
@@ -16,7 +16,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: calc(23 / 20);
-  color: #b4b4b4;
+  color: var(---second-text-color);
   margin-bottom: 12px;
 }
 
@@ -39,7 +39,7 @@
   font-size: 12px;
   line-height: calc(15 / 12);
   letter-spacing: 0.02em;
-  color: #7a7a7a;
+  color: var(--text-color);
   margin-bottom: 28px;
 }
 
@@ -70,7 +70,7 @@
   margin-bottom: 32px;
 }
 .home-about-two-wrap .home-about-restrong-text {
-  color: #c79002;
+  color: var(--brown-color);
   max-width: 163px;
 }
 
@@ -111,7 +111,7 @@
 }
 .about-restrong-button-svg:hover,
 .about-restrong-button-svg:focus {
-  fill: #f3c653;
+  fill: var(--akzent-yellow-color);
 }
 
 /* -----------------------------Tablet------------------------------ */
@@ -123,50 +123,33 @@
   .home-about-one-wrap {
     display: flex;
     gap: 26px;
+    margin-bottom: 338px;
   }
   .home-about-restrong-wrap {
     max-width: 439px;
-    margin-bottom: 290px;
   }
 
   .home-about-restrong-header {
-    /* font-family: 'Times New Roman';
-  font-style: normal;
-  font-weight: 400; */
     font-size: 32px;
     line-height: calc(37 / 32);
     margin-bottom: 4px;
   }
 
   .home-about-restrong-name {
-    /* text-transform: uppercase;
-  font-family: 'Film P3';
-  font-style: normal;
-  font-weight: 700; */
     font-size: 64px;
     line-height: calc(69 / 64);
-    /* letter-spacing: 0.3em; */
     margin-bottom: 24px;
   }
 
   .home-about-restrong-text {
-    /* font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600; */
     font-size: 16px;
-    line-height: calc(20 / 12);
-    /* letter-spacing: 0.02em; */
-    /* color: #7a7a7a; */
+    line-height: calc(20 / 16);
     margin-bottom: 0px;
   }
 
   .home-about-restrong-img-one {
     position: absolute;
     transform: translateY(-152px);
-    /* display: block;
-  background: #dadada;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 2px; */
     width: 400px;
     height: 524px;
     margin-left: 0;
@@ -174,10 +157,7 @@
   }
 
   .home-about-two-wrap {
-    /* display: flex; */
     gap: 0px;
-    /* flex-wrap: nowrap;
-  align-items: center; */
     margin-bottom: 140px;
   }
 
@@ -188,15 +168,11 @@
   .home-about-restrong-img-two {
     position: absolute;
     top: 476px;
-    /* /* background: #dadada; */
-    /* box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25); */
-    /* border-radius: 2px; */
     width: 350px;
     height: 500px;
     margin-bottom: 0px;
   }
   .home-about-two-wrap .home-about-restrong-text {
-    /* color: #c79002; */
     margin-left: 398px;
     margin-bottom: 0px;
     max-width: 321px;
@@ -211,32 +187,82 @@
     gap: 40px;
     margin-bottom: 32px;
   }
-  .about-restrong-photo-item {
-  }
+
   .about-restrong-photo-img {
-    width: 100%;
     height: 194px;
   }
-  .about-restrong-button-list {
+}
+
+/* -----------------------------Desktop------------------------------ */
+
+@media screen and (min-width: 1280px) {
+  .home-about-restrong {
+    padding: 120px 0 50px;
+  }
+  .home-about-one-wrap {
     display: flex;
-    justify-content: right;
-    gap: 32px;
+    gap: 35px;
+    margin-bottom: 348px;
   }
-  .about-restrong-button-item {
+  .home-about-restrong-wrap {
+    max-width: 530px;
   }
-  .about-restrong-button-btn {
-    width: 32px;
-    height: 32px;
-    background: none;
-    border: none;
+
+  .home-about-restrong-header {
+    font-size: 32px;
+    line-height: calc(37 / 32);
+    margin-bottom: 4px;
   }
-  .about-restrong-button-svg {
-    width: 30px;
-    height: 17px;
-    fill: #000000;
+
+  .home-about-restrong-name {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    margin-bottom: 24px;
   }
-  .about-restrong-button-svg:hover,
-  .about-restrong-button-svg:focus {
-    fill: #f3c653;
+
+  .home-about-restrong-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    margin-bottom: 0px;
+  }
+
+  .home-about-restrong-img-one {
+    position: absolute;
+    top: -33px;
+    width: 460px;
+    height: 574px;
+  }
+
+  .home-about-two-wrap {
+    gap: 0px;
+    margin-bottom: 119px;
+  }
+
+  .home-about-restrong-img-two {
+    position: absolute;
+    top: 476px;
+    width: 460px;
+    height: 574px;
+    margin-bottom: 0px;
+  }
+  .home-about-two-wrap .home-about-restrong-text {
+    margin-left: 492px;
+    margin-bottom: 0px;
+    max-width: 312px;
+  }
+
+  .about-restrong-photo-list {
+    position: static;
+    transform: none;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    margin-bottom: 32px;
+  }
+
+  .about-restrong-photo-img {
+    height: 254px;
   }
 }
