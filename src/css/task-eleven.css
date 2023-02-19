@@ -1,0 +1,249 @@
+.rest-menu-container {
+  background-color: inherit;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.menu-separate-box {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.dish-container {
+  margin-bottom: 16px;
+}
+.last-dish-container {
+  margin-bottom: 0;
+}
+
+.menu-head-text {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.15;
+  margin-bottom: 31px;
+  text-transform: uppercase;
+}
+.dish-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+.dish-title-subbox {
+  display: flex;
+  padding: 0;
+  margin-bottom: 8px;
+  border: none;
+  height: fit-content;
+  justify-content: space-between;
+}
+.dish-text {
+  display: block;
+  width: 221px;
+  border: none;
+}
+.dish-name {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  margin-bottom: 4px;
+  color: black;
+}
+.ingridient-box {
+  height: auto;
+}
+.ingridient {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  color: black;
+}
+.dish-netto {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-bottom: 0;
+}
+.dish-price {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.netto-price-box {
+  display: flex;
+  justify-items: left;
+  align-items: center;
+}
+
+/* ------------BTN-------------- */
+.rest-book-table-btn {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: auto;
+  margin-top: 24px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 45vw;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--akzent-yellow-colo);
+  background-color: black;
+  padding: 14px 23px;
+  border-radius: 25px;
+  border: 2px solid var(--fon-lemon-color);
+  width: 238px;
+  height: auto;
+  cursor: pointer;
+  transition-property: background-color, border-color;
+  transition-duration: 250ms;
+}
+
+.rest-book-table-btn:hover,
+.rest-book-table-btn:focus,
+.rest-book-table-btn:active {
+  background-color: #ffffff;
+  border-color: var(--akzent-yellow-colo);
+}
+
+/* -------------Mobile------------ */
+@media screen and (max-width: 1023px) {
+  /* ------------BTN-------------- */
+
+  .rest-book-table-btn {
+    font-size: 16px;
+  }
+}
+
+/* -------------Tablet------------ */
+@media screen and (min-width: 1024px) {
+  .rest-menu-container {
+    display: flex;
+    padding-top: 58px;
+    padding-bottom: 40px;
+    background-color: var(--fon-dark-lemon-color);
+  }
+
+  .menu-head-text {
+  }
+
+  .menu-separate-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    max-height: 809px;
+    column-gap: 91px;
+  }
+
+  .dish-container {
+    width: 411px;
+    height: fit-content;
+    margin-bottom: 12px;
+  }
+
+  .dish-container.bigger-dish-container {
+    width: 430px;
+  }
+  .mb-reduce {
+    height: 20px;
+  }
+  .dish-title {
+    margin-bottom: 20px;
+  }
+
+  .dish-title-subbox.mb-reduce {
+    margin-bottom: 8px;
+  }
+
+  .dish-text {
+    width: 262px;
+  }
+  /* ------------BTN-------------- */
+
+  .rest-book-table-btn {
+    margin-left: 694px;
+    margin-top: 12px;
+    font-size: 16px;
+  }
+}
+
+/* -------------Descktop------------ */
+@media screen and (min-width: 1280px) {
+  .rest-menu-container {
+    padding-bottom: 60px;
+  }
+
+  .menu-head-text {
+    margin-bottom: 40px;
+  }
+
+  .menu-separate-box {
+    column-gap: 142px;
+    justify-content: space-between;
+  }
+
+  .dish-container {
+    width: 485px;
+    margin-bottom: 8px;
+  }
+  .dish-container.bigger-dish-container {
+    width: 485px;
+  }
+
+  .dish-name {
+    height: 20px;
+  }
+
+      .dish-title-subbox.mb-reduce {
+    height: 23px;
+  }
+
+
+  .dish-title-subbox {
+    min-width: 485px;
+    margin-bottom: 12px;
+  }
+
+  .dish-text {
+    width: 291px;
+  }
+
+  .ingridient-box {
+    max-width: 262px;
+  }
+
+  .dish-title {
+    font-size: 24px;
+  }
+  .dish-name {
+    font-size: 16px;
+  }
+
+  .ingridient {
+    margin-bottom: 12px;
+  }
+
+  .dish-price {
+    font-size: 16px;
+  }
+
+  /* ------------BTN-------------- */
+
+  .rest-book-table-btn {
+    margin-left: 874px;
+    margin-top: 12px;
+  }
+}
