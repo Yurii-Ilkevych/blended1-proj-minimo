@@ -1,1 +1,34 @@
-<!-- Task 20 - Room Price Modal window -->
+<div class="p-modal-backdrop">
+  <div class="p-modal">
+    <button type="button" class="p-modal-close-btn">
+      <svg class="p-modal-close-icon" width="24" height="24">
+        <use href="./img/img.svg#icon-modal-close-btn"></use>
+      </svg>
+    </button>
+    <h1 class="p-modal-name">ЦІНИ НА НОМЕР</h1>
+    <h2 class="p-modal-room">Двомісний люкс</h2>
+    <p class="p-modal-category">Категорія номеру</p>
+    <form class="p-modal-form">
+      <div class="p-modal-form-thumb">
+        <label class="p-modal-list p-modal-arrow">
+          <select class="p-modal-input" name="user-date" required>
+            <option value="" selected>1</option>
+          </select>
+          <span class="p-modal-label-name">Кількість ночей</span>
+        </label>
+        <label class="p-modal-list">
+          <input
+            class="p-modal-input"
+            type="text"
+            name="user-price"
+            placeholder="1000"
+            pattern="^[ 0-9]+$"
+            required
+          />
+          <span class="p-modal-label-name">грн</span>
+        </label>
+      </div>
+      <button type="submit" class="p-modal-send-btn">ЗАБРОНЮВАТИ НОМЕР</button>
+    </form>
+  </div>
+</div>
