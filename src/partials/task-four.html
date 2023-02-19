@@ -1,18 +1,18 @@
 <!-- Task 4 - The second home section "Details of our restaurant" -->
 <section class="about-restaurant container">
   <div>
-    <!-- -------------------Text------------------------->
+    <!-- ===================Text======================= -->
     <div class="home-restaurant-name-wrap">
       <p class="home-restaurant-name">Mimiho</p>
       <h2 class="home-restaurant-header">Ресторан</h2>
       <p class="home-restaurant-text">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-        Velit officia consequat duis enim velit mollit.
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit.
       </p>
     </div>
-    
-    <!-- -------------------Reservation Btn------------------------->
-  
+
+    <!-- ===================Reservation Btn======================= -->
+
     <div class="home-restaurant-reservation-wrap">
       <ul class="home-restaurant-reservation">
         <li class="home-restaurant-reservation-item">
@@ -21,56 +21,107 @@
           </button>
         </li>
         <li class="home-restaurant-reservation-item">
-          <button type="button" class="home-restaurant-reservation-btn">
-            <a class="home-restaurant-menu-link" href="restaurant.html"
+          <div class="home-restaurant-reservation-btn">
+            <a class="home-restaurant-reservation-link" href="restaurant.html"
               >Переглянути меню</a
             >
-          </button>
+          </div>
         </li>
       </ul>
     </div>
-    <!-- -------------------Slider------------------------->
-  
+    <!-- ===================Slider======================= -->
+
     <div class="home-restaurant-list-wrap">
       <ul class="home-restaurant-list">
         <li class="home-restaurant-item">
-          <img
-            class="home-restrong-img"
-            srcset="
-              ../img/task-4/about-restaurant-menu1-mobile.jpg    1x,
-              ../img/task-4/about-restaurant-menu1-mobile@2x.jpg 2x
-            "
-            src="../img/task-4/about-restaurant-menu1-mobile.jpg"
-            alt="restaurant menu foto"
-            width="370"
-            height="270"
-          />
+          <picture>
+            <source
+              srcset="
+                ../img/task-4/about-restaurant-menu1-desktop.jpg    1x,
+                ../img/task-4/about-restaurant-menu1-desktop@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+
+            <source
+              srcset="
+                ../img/task-4/about-restaurant-menu1-tablet.jpg    1x,
+                ../img/task-4/about-restaurant-menu1-tablet@2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <img
+              class="home-restrong-img"
+              srcset="
+                ../img/task-4/about-restaurant-menu1-mobile.jpg    1x,
+                ../img/task-4/about-restaurant-menu1-mobile@2x.jpg 2x
+              "
+              src="../img/task-4/about-restaurant-menu1-mobile.jpg"
+              alt="restaurant menu foto"
+              width="370"
+              height="270"
+            />
+          </picture>
         </li>
         <li class="home-restaurant-item">
-          <img
-            class="home-restrong-img"
-            srcset="
-              ../img/task-4/about-restaurant-menu2-mobile.jpg    1x,
-              ../img/task-4/about-restaurant-menu2-mobile@2x.jpg 2x
-            "
-            src="../img/task-4/about-restaurant-menu2-mobile.jpg"
-            alt="restaurant menu foto"
-            width="274"
-            height="270"
-          />
+          <picture>
+            <source
+              srcset="
+                ../img/task-4/about-restaurant-menu2-desktop.jpg    1x,
+                ../img/task-4/about-restaurant-menu2-desktop@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+
+            <source
+              srcset="
+                ../img/task-4/about-restaurant-menu2-tablet.jpg    1x,
+                ../img/task-4/about-restaurant-menu2-tablet@2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <img
+              class="home-restrong-img"
+              srcset="
+                ../img/task-4/about-restaurant-menu2-mobile.jpg    1x,
+                ../img/task-4/about-restaurant-menu2-mobile@2x.jpg 2x
+              "
+              src="../img/task-4/about-restaurant-menu2-mobile.jpg"
+              alt="restaurant menu foto"
+              width="274"
+              height="270"
+            />
+          </picture>
         </li>
         <li class="home-restaurant-item">
-          <img
-            class="home-restrong-img"
-            srcset="
-              ../img/task-4/about-restaurant-menu3-tablet.jpg    1x,
-              ../img/task-4/about-restaurant-menu3-tablet@2x.jpg 2x
-            "
-            src="../img/task-4/about-restaurant-menu3-tablet.jpg"
-            alt="restaurant menu foto"
-            width="476"
-            height="270"
-          />
+          <picture>
+            <source
+              srcset="
+                ../img/task-4/about-restaurant-menu3-desktop.jpg    1x,
+                ../img/task-4/about-restaurant-menu3-desktop@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+
+            <source
+              srcset="
+                ../img/task-4/about-restaurant-menu3-tablet.jpg    1x,
+                ../img/task-4/about-restaurant-menu3-tablet@2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+            <img
+              class="home-restrong-img"
+              srcset="
+                ../img/task-4/about-restaurant-menu3-tablet.jpg    1x,
+                ../img/task-4/about-restaurant-menu3-tablet@2x.jpg 2x
+              "
+              src="../img/task-4/about-restaurant-menu3-tablet.jpg"
+              alt="restaurant menu foto"
+              width="476"
+              height="270"
+            />
+          </picture>
         </li>
       </ul>
       <ul class="home-restaurant-button-list">
@@ -89,8 +140,7 @@
           </button>
         </li>
       </ul>
-  </div>
-    <!-- -------------------Slider Btn------------------------->
-
+    </div>
+    <!-- ===================Slider Btn======================= -->
   </div>
 </section>

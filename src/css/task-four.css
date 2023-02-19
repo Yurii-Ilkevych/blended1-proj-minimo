@@ -1,7 +1,7 @@
 .about-restaurant {
   position: relative;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
     url(../img/task-4/about-restaurant-bg-mobile.jpg);
   background-size: cover;
   background-position: center;
@@ -13,7 +13,7 @@
   screen and (min-resolution: 192dpi) and (max-width: 1023px),
   screen and (min-resolution: 2dppx) and (max-width: 1023px) {
   .home-hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
       url(../img/task-4/about-restaurant-bg-mobile@2x.jpg);
   }
 }
@@ -91,18 +91,18 @@
   height: 32px;
   border: none;
   background: none;
-  padding: 7px 0 px;
+  padding: 7px 0px;
 }
 
 .home-restaurant-button-svg {
   width: 30px;
   height: 17px;
-  fill: #ffffff;
+  fill: var(--white-color);
 }
 
 .home-restaurant-button-btn:hover .home-restaurant-button-svg,
 .home-restaurant-button-btn:focus .home-restaurant-button-svg {
-  fill: #f3c653;
+  fill: var(--akzent-yellow-color);
 }
 
 /* -------------------Reservation Btn------------------------- */
@@ -117,25 +117,28 @@
 .home-restaurant-reservation-item {
 }
 .home-restaurant-reservation-btn {
+  text-align: center;
+  display: inline-block;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
-  color: #f3c653;
+  color: var(--akzent-yellow-color);
   width: 236px;
   height: 48px;
   background: rgba(0, 0, 0, 0.4);
   padding: 14px 0;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--white-color);
   border-radius: 25px;
 }
 .home-restaurant-reservation-btn:focus,
 .home-restaurant-reservation-btn:hover {
-  background: #ffffff;
-  border: 2px solid #f3c653;
+  background: var(--white-color);
+  border: 2px solid var(--akzent-yellow-color);
 }
 
-.home-restaurant-menu-link {
+.home-restaurant-reservation-link {
+  /* display: inline-block; */
 }
 
 /* -----------------------------Tablet------------------------------ */
@@ -143,7 +146,7 @@
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .about-restaurant {
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
       url(../img/task-4/about-restaurant-bg-tablet.jpg);
     background-size: cover;
     background-position: center;
@@ -184,6 +187,10 @@
   .home-restaurant-reservation {
     gap: 16px;
   }
+  .home-restaurant-reservation-btn {
+    display: inline-block;
+    background: var(--black-color);
+  }
 
   /* -------------------Slider------------------------- */
   .home-restaurant-list-wrap {
@@ -211,7 +218,7 @@
   screen and (min-resolution: 192dpi) and (min-width: 1024px) and (max-width: 1279px),
   screen and (min-resolution: 2dppx) and (min-width: 1024px) and (max-width: 1279px) {
   .home-hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
       url(../img/task-4/about-restaurant-bg-tablet@2x.jpg);
   }
 }
@@ -221,7 +228,7 @@
 @media screen and (min-width: 1280px) {
   .about-restaurant {
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
       url(../img/task-4/about-restaurant-bg-desktop.jpg);
     background-size: cover;
     background-position: center;
@@ -261,6 +268,10 @@
   .home-restaurant-reservation {
     gap: 16px;
   }
+  .home-restaurant-reservation-btn {
+    display: inline-block;
+    background: var(--black-color);
+  }
 
   /* -------------------Slider------------------------- */
   .home-restaurant-list-wrap {
@@ -288,7 +299,7 @@
   screen and (min-resolution: 192dpi) and (min-width: 1280px),
   screen and (min-resolution: 2dppx) and (min-width: 1280px) {
   .home-hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
       url(../img/task-4/about-restaurant-bg-desktop@2x.jpg);
   }
 }
