@@ -4,8 +4,16 @@
   display: flex;
   flex-direction: column;
 }
+.menu-separate-box{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 .dish-container {
   margin-bottom: 16px;
+}
+.last-dish-container{
+margin-bottom: 0;
 }
 
 .menu-head-text {
@@ -85,7 +93,7 @@
   display: flex;
   flex-wrap: nowrap;
   margin: auto;
-  margin-top: 32px;
+  margin-top: 24px;
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 45vw;
@@ -104,6 +112,7 @@
 }
 
 .rest-book-table-btn:hover,
+.rest-book-table-btn:focus,
 .rest-book-table-btn:active {
   background-color: #ffffff;
   border-color: var(--akzent-yellow-colo);
@@ -134,12 +143,14 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-around;
     max-height: 809px;
-    column-gap: 88px;
+    column-gap: 91px;
   }
 
   .dish-container {
-    max-width: 411px;
+    max-width: 430px;
+    min-width: 411px;
     height: fit-content;
   }
   .dish-title-subbox {
@@ -149,6 +160,7 @@
 
   .rest-book-table-btn {
     margin-left: 694px;
+    margin-top: 16px;
     font-size: 16px;
   }
 }
