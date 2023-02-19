@@ -1,50 +1,57 @@
-<button type="button">X</button>
-<p>ЗАБРОНЮВАТИ НОМЕР</p>
-<form action="">
-  <input
-    type="text"
-    name="user-name"
-    id="name"
-    placeholder="Ваше ім’я"
-    required
-  />
-  <label for="name">На кого забронювати номер?</label>
-
-  <input
-    type="tel"
-    name="user-tel"
-    id="tel"
-    placeholder="+38 (___) ___-__-__"
-    required
-  />
-  <label for="tel">Номер телефону</label>
-
-  <input
-    type="text"
-    name="user-room"
-    id="room"
-    placeholder="Двомісний люкс"
-    required
-  />
-  <label for="room">Категорія номеру</label>
-
-  <input
-    type="text"
-    name="date-start"
-    id="date-start"
-    placeholder="Сьогодні"
-    required
-  />
-  <label for="date-start">Дата заїзду</label>
-
-  <input
-    type="text"
-    name="date-finish"
-    id="date-finish"
-    placeholder="Сьогодні"
-    required
-  />
-  <label for="date-finish">Дата виїзду</label>
-
-  <button type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
-</form>
+<div class="r-modal-backdrop">
+  <div class="r-modal">
+    <button type="button" class="r-modal-close-btn">
+      <svg class="r-modal-close-icon" width="24" height="24">
+        <use href="./img/img.svg#icon-modal-close-btn"></use>
+      </svg>
+    </button>
+    <h1 class="r-modal-name">ЗАБРОНЮВАТИ НОМЕР</h1>
+    <form class="r-modal-form">
+      <div class="r-modal-form-thumb">
+        <label class="r-modal-list">
+          <input
+            class="r-modal-input"
+            type="text"
+            name="user-name"
+            placeholder="Ваше ім’я"
+            pattern="^[А-Яа-яЁё\s]+$"
+            required
+          />
+          <span class="r-modal-label-name">На кого забронювати номер?</span>
+        </label>
+        <label class="r-modal-list">
+          <input
+            class="r-modal-input"
+            type="tel"
+            name="user-tel"
+            placeholder="+38 (___) ___-__-__"
+            pattern="^+380\d{3}\d{2}\d{2}\d{2}$"
+            required
+          />
+          <span class="r-modal-label-name">Номер телефону</span>
+        </label>
+        <label class="r-modal-list r-modal-arrow">
+          <select class="r-modal-input" name="user-room" required>
+            <option value="" selected>Двомісний люкс</option>
+          </select>
+          <span class="r-modal-label-name">Категорія номеру</span>
+        </label>
+        <label class="r-modal-list r-modal-arrow">
+          <select class="r-modal-input" name="date-start" required>
+            <option value="" selected>Сьогодні</option>
+          </select>
+          <span class="r-modal-label-name">Дата заїзду</span>
+        </label>
+        <label class="r-modal-list r-modal-arrow">
+          <select class="r-modal-input" name="date-finish" required>
+            <option value="" selected>Сьогодні</option>
+          </select>
+          <span class="r-modal-label-name">Дата виїзду</span>
+        </label>
+      </div>
+      <button type="submit" class="r-modal-send-btn">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </form>
+  </div>
+</div>
