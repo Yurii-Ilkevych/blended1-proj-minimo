@@ -151,13 +151,15 @@
   .dish-container {
     width: 411px;
     height: fit-content;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
 
   .dish-container.bigger-dish-container {
     width: 430px;
   }
-
+  .mb-reduce {
+    height: 20px;
+  }
   .dish-title {
     margin-bottom: 20px;
   }
@@ -195,10 +197,20 @@
 
   .dish-container {
     width: 485px;
+    margin-bottom: 8px;
   }
   .dish-container.bigger-dish-container {
     width: 485px;
   }
+
+  .dish-name {
+    height: 20px;
+  }
+
+      .dish-title-subbox.mb-reduce {
+    height: 23px;
+  }
+
 
   .dish-title-subbox {
     min-width: 485px;
