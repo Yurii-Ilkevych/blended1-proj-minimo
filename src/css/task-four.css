@@ -56,9 +56,9 @@
 
 /* -------------------Slider------------------------- */
 .home-restaurant-list-wrap {
-    position: absolute;
-    left: 40px;
-    top: 233px;
+  position: absolute;
+  left: 40px;
+  top: 233px;
 }
 .home-restaurant-list {
   display: flex;
@@ -80,36 +80,34 @@
 }
 
 .home-restaurant-button-list {
-    display: flex;
-    gap: 32px;
+  display: flex;
+  gap: 32px;
 }
 
 .home-restaurant-button-item {
 }
 .home-restaurant-button-btn {
-    width: 32px;
-    height: 32px;
-    border: none;
-    background: none;
-    padding: 7px 0 px;
-    }
-
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: none;
+  padding: 7px 0 px;
+}
 
 .home-restaurant-button-svg {
-    width: 30px;
-    height: 17px;
-    fill: #FFFFFF;
+  width: 30px;
+  height: 17px;
+  fill: #ffffff;
 }
 
 .home-restaurant-button-btn:hover .home-restaurant-button-svg,
-.home-restaurant-button-btn:focus .home-restaurant-button-svg  {
-    fill: #F3C653;
+.home-restaurant-button-btn:focus .home-restaurant-button-svg {
+  fill: #f3c653;
 }
-
 
 /* -------------------Reservation Btn------------------------- */
 .home-restaurant-reservation-wrap {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 .home-restaurant-reservation {
   display: flex;
@@ -140,80 +138,74 @@
 .home-restaurant-menu-link {
 }
 
-
 /* -----------------------------Tablet------------------------------ */
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-    .about-restaurant {
-  position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(../img/task-4/about-restaurant-bg-tablet.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 48px 0 40px;
-}
+  .about-restaurant {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../img/task-4/about-restaurant-bg-tablet.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 48px 0 96px;
+  }
 
+  /* -------------------Text------------------------- */
 
-/* -------------------Text------------------------- */
+  .home-restaurant-name-wrap {
+    width: 610px;
+    margin-left: 263px;
+    text-align: left;
+  }
 
-.home-restaurant-name-wrap {
-  width: 610px;
-  margin-left: 263px;
-  text-align: left;
-}
+  .home-restaurant-name {
+    font-size: 64px;
+    line-height: calc(69 / 64);
 
-.home-restaurant-name {
-  font-size: 64px;
-  line-height: calc(69 / 64);
-  
-  margin-bottom: 16px;
-}
-.home-restaurant-header {
-  font-size: 24px;
-  line-height: calc(29 / 24);
-  margin-bottom: 8px;
-}
-.home-restaurant-text {
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  margin-bottom: 198px;
-}
+    margin-bottom: 16px;
+  }
+  .home-restaurant-header {
+    font-size: 24px;
+    line-height: calc(29 / 24);
+    margin-bottom: 8px;
+  }
+  .home-restaurant-text {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    margin-bottom: 198px;
+  }
 
-
-/* -------------------Reservation Btn------------------------- */
-.home-restaurant-reservation-wrap {
+  /* -------------------Reservation Btn------------------------- */
+  .home-restaurant-reservation-wrap {
     width: 100%;
     text-align: left;
-    
-}
-.home-restaurant-reservation {
-  gap: 16px;
-  margin-bottom: 96px;
-}
+  }
+  .home-restaurant-reservation {
+    gap: 16px;
+  }
 
-/* -------------------Slider------------------------- */
-.home-restaurant-list-wrap {
+  /* -------------------Slider------------------------- */
+  .home-restaurant-list-wrap {
     position: absolute;
     left: 312px;
     top: 254px;
-}
-.home-restaurant-list {
-  gap: 32px;
-  margin-bottom: 24px;
-}
+  }
+  .home-restaurant-list {
+    gap: 32px;
+    margin-bottom: 24px;
+  }
 
-.home-restaurant-item:last-child {
-  display: block;
+  .home-restaurant-item:last-child {
+    display: block;
+  }
+  .home-restrong-img {
+    width: auto;
+    height: 270px;
+    background: #dadada;
+    border-radius: 2px;
+  }
 }
-.home-restrong-img {
-  width: auto;
-  height: 270px;
-  background: #dadada;
-  border-radius: 2px;
-}
-}
-
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px) and (max-width: 1279px),
   screen and (min-resolution: 192dpi) and (min-width: 1024px) and (max-width: 1279px),
@@ -224,85 +216,79 @@
   }
 }
 
-/* -----------------------------Tablet------------------------------ */
+/* -----------------------------Desktop------------------------------ */
 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-    .about-restaurant {
-  position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(../img/task-4/about-restaurant-bg-tablet.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 48px 0 40px;
-}
+@media screen and (min-width: 1280px) {
+  .about-restaurant {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../img/task-4/about-restaurant-bg-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 48px 0 94px;
+  }
 
+  /* -------------------Text------------------------- */
 
-/* -------------------Text------------------------- */
+  .home-restaurant-name-wrap {
+    width: 610px;
+    margin-left: 253px;
+    text-align: left;
+  }
 
-.home-restaurant-name-wrap {
-  width: 610px;
-  margin-left: 263px;
-  text-align: left;
-}
+  .home-restaurant-name {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    margin-bottom: 16px;
+  }
+  .home-restaurant-header {
+    font-size: 24px;
+    line-height: calc(29 / 24);
+    margin-bottom: 8px;
+  }
+  .home-restaurant-text {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    margin-bottom: 200px;
+  }
 
-.home-restaurant-name {
-  font-size: 64px;
-  line-height: calc(69 / 64);
-  
-  margin-bottom: 16px;
-}
-.home-restaurant-header {
-  font-size: 24px;
-  line-height: calc(29 / 24);
-  margin-bottom: 8px;
-}
-.home-restaurant-text {
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  margin-bottom: 198px;
-}
-
-
-/* -------------------Reservation Btn------------------------- */
-.home-restaurant-reservation-wrap {
+  /* -------------------Reservation Btn------------------------- */
+  .home-restaurant-reservation-wrap {
     width: 100%;
     text-align: left;
-    
-}
-.home-restaurant-reservation {
-  gap: 16px;
-  margin-bottom: 96px;
-}
+  }
+  .home-restaurant-reservation {
+    gap: 16px;
+  }
 
-/* -------------------Slider------------------------- */
-.home-restaurant-list-wrap {
+  /* -------------------Slider------------------------- */
+  .home-restaurant-list-wrap {
     position: absolute;
-    left: 312px;
+    left: 353px;
     top: 254px;
-}
-.home-restaurant-list {
-  gap: 32px;
-  margin-bottom: 24px;
+  }
+  .home-restaurant-list {
+    gap: 32px;
+    margin-bottom: 24px;
+  }
+
+  .home-restaurant-item:last-child {
+    display: block;
+  }
+  .home-restrong-img {
+    width: auto;
+    height: 270px;
+    background: #dadada;
+    border-radius: 2px;
+  }
 }
 
-.home-restaurant-item:last-child {
-  display: block;
-}
-.home-restrong-img {
-  width: auto;
-  height: 270px;
-  background: #dadada;
-  border-radius: 2px;
-}
-}
-
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px) and (max-width: 1279px),
-  screen and (min-resolution: 192dpi) and (min-width: 1024px) and (max-width: 1279px),
-  screen and (min-resolution: 2dppx) and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px) {
   .home-hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../img/task-4/about-restaurant-bg-tablet@2x.jpg);
+      url(../img/task-4/about-restaurant-bg-desktop@2x.jpg);
   }
 }
