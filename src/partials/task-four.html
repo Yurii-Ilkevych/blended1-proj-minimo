@@ -1,78 +1,93 @@
 <!-- Task 4 - The second home section "Details of our restaurant" -->
 <section class="about-restaurant container">
-  <ul class="home-restaurant-reservation">
-    <li class="home-restaurant-reservation-item">
-      <button type="button" class="home-restaurant-reservation-btn">
-        Забронювати столик
-      </button>
-    </li>
-    <li class="home-restaurant-reservation-item">
-      <a class="home-restaurant-menu-btn" href="restaurant.html"
-        >Переглянути меню</a
-      >
-    </li>
-  </ul>
-  <p class="home-restaurant-name">Mimiho</p>
-  <h2 class="home-restaurant-header">Ресторан</h2>
-  <p class="home-restaurant-text">
-    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-    Velit officia consequat duis enim velit mollit.
-  </p>
-  <ul class="home-restaurant-list">
-    <li class="home-restaurant-item">
-      <img
-        class="home-restrong-img"
-        srcset="
-          ../img/task-4/about-restaurant-menu1-mobile.jpg    1x,
-          ../img/task-4/about-restaurant-menu1-mobile@2x.jpg 2x
-        "
-        src="../img/task-4/about-restaurant-menu1-mobile.jpg"
-        alt="restaurant menu foto"
-        width="370"
-        height="270"
-      />
-    </li>
-    <li class="home-restaurant-item">
-      <img
-        class="home-restrong-img"
-        srcset="
-          ../img/task-4/about-restaurant-menu2-mobile.jpg    1x,
-          ../img/task-4/about-restaurant-menu2-mobile@2x.jpg 2x
-        "
-        src="../img/task-4/about-restaurant-menu2-mobile.jpg"
-        alt="restaurant menu foto"
-        width="274"
-        height="270"
-      />
-    </li>
-    <li class="home-restaurant-item">
-      <img
-        class="home-restrong-img"
-        srcset="
-          ../img/task-4/about-restaurant-menu3-tablet.jpg    1x,
-          ../img/task-4/about-restaurant-menu3-tablet@2x.jpg 2x
-        "
-        src="../img/task-4/about-restaurant-menu3-tablet.jpg"
-        alt="restaurant menu foto"
-        width="476"
-        height="270"
-      />
-    </li>
-  </ul>
-  <ul class="about-restrong-button-list">
-    <li class="about-restrong-button-item">
-      <button class="about-restrong-button-btn">
-        <svg class="about-restrong-button-svg">
+<!-- -------------------Text------------------------->
+  <div class="home-restaurant-name-wrap">
+    <p class="home-restaurant-name">Mimiho</p>
+    <h2 class="home-restaurant-header">Ресторан</h2>
+    <p class="home-restaurant-text">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit.
+    </p>
+  </div >
+<!-- -------------------Slider------------------------->
+
+  <div class="home-restaurant-list-wrap">
+    <ul class="home-restaurant-list">
+      <li class="home-restaurant-item">
+        <img
+          class="home-restrong-img"
+          srcset="
+            ../img/task-4/about-restaurant-menu1-mobile.jpg    1x,
+            ../img/task-4/about-restaurant-menu1-mobile@2x.jpg 2x
+          "
+          src="../img/task-4/about-restaurant-menu1-mobile.jpg"
+          alt="restaurant menu foto"
+          width="370"
+          height="270"
+        />
+      </li>
+      <li class="home-restaurant-item">
+        <img
+          class="home-restrong-img"
+          srcset="
+            ../img/task-4/about-restaurant-menu2-mobile.jpg    1x,
+            ../img/task-4/about-restaurant-menu2-mobile@2x.jpg 2x
+          "
+          src="../img/task-4/about-restaurant-menu2-mobile.jpg"
+          alt="restaurant menu foto"
+          width="274"
+          height="270"
+        />
+      </li>
+      <li class="home-restaurant-item">
+        <img
+          class="home-restrong-img"
+          srcset="
+            ../img/task-4/about-restaurant-menu3-tablet.jpg    1x,
+            ../img/task-4/about-restaurant-menu3-tablet@2x.jpg 2x
+          "
+          src="../img/task-4/about-restaurant-menu3-tablet.jpg"
+          alt="restaurant menu foto"
+          width="476"
+          height="270"
+        />
+      </li>
+    </ul>
+    <!-- -------------------Slider Btn------------------------->
+    
+    <ul class="home-restaurant-button-list">
+    <li class="home-restaurant-button-item">
+      <button class="home-restaurant-button-btn">
+        <svg class="home-restaurant-button-svg">
           <use href="../img/task-3/slider-icons.svg#icon-slide-left"></use>
         </svg>
       </button>
     </li>
-    <li class="about-restrong-button-item">
-      <button class="about-restrong-button-btn">
-        <svg class="about-restrong-button-svg">
+    <li class="home-restaurant-button-item">
+      <button class="home-restaurant-button-btn">
+        <svg class="home-restaurant-button-svg">
           <use href="../img/task-3/slider-icons.svg#icon-slide-right"></use>
         </svg>
       </button>
     </li>
   </ul>
+</div >
+  <!-- -------------------Reservation Btn------------------------->
+
+<di class="home-restaurant-reservation-wrap">
+      <ul class="home-restaurant-reservation">
+      <li class="home-restaurant-reservation-item">
+        <button type="button" class="home-restaurant-reservation-btn">
+          Забронювати столик
+        </button>
+      </li>
+      <li class="home-restaurant-reservation-item">
+        <button type="button" class="home-restaurant-reservation-btn">
+          <a class="home-restaurant-menu-link" href="restaurant.html"
+            >Переглянути меню</a
+          >
+        </button>
+      </li>
+    </ul>
+</di >
 </section>

@@ -1,28 +1,141 @@
+.about-restaurant {
+  position: relative;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../img/task-4/about-restaurant-bg-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 414px;
+  padding: 24px 0 40px;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
+  screen and (min-resolution: 192dpi) and (max-width: 1023px),
+  screen and (min-resolution: 2dppx) and (max-width: 1023px) {
+  .home-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../img/task-4/about-restaurant-bg-mobile@2x.jpg);
+  }
+}
+
+/* -------------------Text------------------------- */
+
+.home-restaurant-name-wrap {
+  width: 259px;
+  margin-left: auto;
+  text-align: left;
+}
+
+.home-restaurant-name {
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  color: var(--white-color);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.home-restaurant-header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+.home-restaurant-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+  color: #bababa;
+  margin-bottom: 398px;
+}
+
+/* -------------------Slider------------------------- */
+.home-restaurant-list-wrap {
+    position: absolute;
+    left: 40px;
+    top: 233px;
+}
+.home-restaurant-list {
+  display: flex;
+
+  flex-wrap: nowrap;
+  gap: 19px;
+  margin-bottom: 16px;
+}
+.home-restaurant-item {
+}
+.home-restaurant-item:last-child {
+  display: none;
+}
+.home-restrong-img {
+  width: auto;
+  height: 270px;
+  background: #dadada;
+  border-radius: 2px;
+}
+
+.home-restaurant-button-list {
+    display: flex;
+    gap: 32px;
+}
+
+.home-restaurant-button-item {
+}
+.home-restaurant-button-btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: none;
+    padding: 7px 0 px;
+    }
+
+
+.home-restaurant-button-svg {
+    width: 30px;
+    height: 17px;
+    fill: #FFFFFF;
+}
+
+.home-restaurant-button-btn:hover .home-restaurant-button-svg,
+.home-restaurant-button-btn:focus .home-restaurant-button-svg  {
+    fill: #F3C653;
+}
+
+
+/* -------------------Reservation Btn------------------------- */
+.home-restaurant-reservation-wrap {
+}
 .home-restaurant-reservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
 }
 .home-restaurant-reservation-item {
 }
 .home-restaurant-reservation-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  width: 236px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 14px 0;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
 }
-.home-restaurant-menu-btn {
+.home-restaurant-reservation-btn:focus,
+.home-restaurant-reservation-btn:hover {
+  background: #ffffff;
+  border: 2px solid #f3c653;
 }
-.home-restaurant-name {
-}
-.home-restaurant-header {
-}
-.home-restaurant-text {
-}
-.home-restaurant-list {
-}
-.home-restaurant-item {
-}
-.home-restrong-img {
-}
-.about-restrong-button-list {
-}
-.about-restrong-button-item {
-}
-.about-restrong-button-btn {
-}
-.about-restrong-button-svg {
+
+.home-restaurant-menu-link {
 }
