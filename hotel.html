@@ -427,8 +427,95 @@
 
     </footer>
     <!-- Modal -->
-    <load src="" />
-    <load src="" />
+    <!-- Book Table Modal window -->
+<div class="t-modal-backdrop is-hidden-t" data-modal-table>
+  <div class="t-modal">
+    <button type="button" class="t-modal-close-btn">
+      <svg class="t-modal-close-icon" width="24" height="24">
+        <use href="./img/img.svg#icon-modal-close-btn"></use>
+      </svg>
+    </button>
+    <h1 class="t-modal-name">ЗАБРОНЮВАТИ СТОЛИК</h1>
+    <form class="t-modal-form">
+      <div class="t-modal-form-thumb">
+        <label class="t-modal-list">
+          <input
+            class="t-modal-input"
+            type="text"
+            name="user-name"
+            placeholder="Ваше ім’я"
+            pattern="^[А-Яа-яЁё\s]+$"
+            required
+          />
+          <span class="t-modal-label-name">На кого забронювати столик?</span>
+        </label>
+        <label class="t-modal-list t-modal-arrow">
+          <select class="t-modal-input" name="user-number" required>
+            <option value="" selected>2</option>
+          </select>
+          <span class="t-modal-label-name">Столик на яку кількість осіб?</span>
+        </label>
+        <label class="t-modal-list">
+          <input
+            class="t-modal-input"
+            type="tel"
+            name="user-tel"
+            placeholder="+38 (___) ___-__-__"
+            pattern="^+380\d{3}\d{2}\d{2}\d{2}$"
+            required
+          />
+          <span class="t-modal-label-name">Номер телефону</span>
+        </label>
+        <label class="t-modal-list t-modal-arrow">
+          <select class="t-modal-input" name="user-date" required>
+            <option value="" selected>Сьогодні</option>
+          </select>
+          <span class="t-modal-label-name">На яку дату бронювати?</span>
+        </label>
+      </div>
+      <button type="submit" class="t-modal-send-btn" data-modal-close-table>
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </form>
+  </div>
+</div>
+
+    <!-- Room Price Modal window -->
+<div class="p-modal-backdrop is-hidden-p" data-modal-price>
+  <div class="p-modal">
+    <button type="button" class="p-modal-close-btn">
+      <svg class="p-modal-close-icon" width="24" height="24">
+        <use href="./img/img.svg#icon-modal-close-btn"></use>
+      </svg>
+    </button>
+    <h1 class="p-modal-name">ЦІНИ НА НОМЕР</h1>
+    <h2 class="p-modal-room">Двомісний люкс</h2>
+    <p class="p-modal-category">Категорія номеру</p>
+    <form class="p-modal-form">
+      <div class="p-modal-form-thumb">
+        <label class="p-modal-list p-modal-arrow">
+          <select class="p-modal-input" name="user-date" required>
+            <option value="" selected>1</option>
+          </select>
+          <span class="p-modal-label-name">Кількість ночей</span>
+        </label>
+        <label class="p-modal-list">
+          <input
+            class="p-modal-input"
+            type="text"
+            name="user-price"
+            placeholder="1000"
+            pattern="^[ 0-9]+$"
+            required
+          />
+          <span class="p-modal-label-name">грн</span>
+        </label>
+      </div>
+      <button type="submit" class="p-modal-send-btn" data-modal-close-price>ЗАБРОНЮВАТИ НОМЕР</button>
+    </form>
+  </div>
+</div>
+
     
   </body>
 </html>
