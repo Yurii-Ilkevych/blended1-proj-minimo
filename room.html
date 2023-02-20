@@ -13,8 +13,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/blended1-proj-minimo/assets/styles-fac82e35.js"></script>
-    <link rel="stylesheet" href="/blended1-proj-minimo/assets/styles-d5278cd3.css">
+    <script type="module" crossorigin src="/blended1-proj-minimo/assets/task-eighteen-91fbb34a.js"></script>
+    <link rel="stylesheet" href="/blended1-proj-minimo/assets/task-eighteen-a7a33cdc.css">
   </head>
   <body>
     <header>
@@ -203,7 +203,7 @@
 </ul>
 <div class="seventeen-btn-flex">
     <div>
-<button type="button" class="seventeen-btn-first">ОФОРМИТИ БРОНЮВАННЯ</button>
+<button type="button" class="seventeen-btn-first" data-modal-open-room>ОФОРМИТИ БРОНЮВАННЯ</button>
 <a href="./hotel.html" class="seventeen-btn-second">
     <p class="seventeen-text-last">Повернутися до перегляду номерів</p>
     <svg class="seventeen-svg" width="24" height="24">
@@ -263,7 +263,65 @@
 
     </footer>
     <!-- Modal -->
-    <load src="" />
+    <!-- Book Room Modal window -->
+<div class="r-modal-backdrop is-hidden-r" data-modal-room>
+  <div class="r-modal">
+    <button type="button" class="r-modal-close-btn">
+      <svg class="r-modal-close-icon" width="24" height="24">
+        <use href="./img/img.svg#icon-modal-close-btn"></use>
+      </svg>
+    </button>
+    <h1 class="r-modal-name">ЗАБРОНЮВАТИ НОМЕР</h1>
+    <form class="r-modal-form">
+      <div class="r-modal-form-thumb">
+        <label class="r-modal-list">
+          <input
+            class="r-modal-input"
+            type="text"
+            name="user-name"
+            placeholder="Ваше ім’я"
+            pattern="^[А-Яа-яЁё\s]+$"
+            required
+          />
+          <span class="r-modal-label-name">На кого забронювати номер?</span>
+        </label>
+        <label class="r-modal-list">
+          <input
+            class="r-modal-input"
+            type="tel"
+            name="user-tel"
+            placeholder="+38 (___) ___-__-__"
+            pattern="^+380\d{3}\d{2}\d{2}\d{2}$"
+            required
+          />
+          <span class="r-modal-label-name">Номер телефону</span>
+        </label>
+        <label class="r-modal-list r-modal-arrow">
+          <select class="r-modal-input" name="user-room" required>
+            <option value="" selected>Двомісний люкс</option>
+          </select>
+          <span class="r-modal-label-name">Категорія номеру</span>
+        </label>
+        <label class="r-modal-list r-modal-arrow">
+          <select class="r-modal-input" name="date-start" required>
+            <option value="" selected>Сьогодні</option>
+          </select>
+          <span class="r-modal-label-name">Дата заїзду</span>
+        </label>
+        <label class="r-modal-list r-modal-arrow">
+          <select class="r-modal-input" name="date-finish" required>
+            <option value="" selected>Сьогодні</option>
+          </select>
+          <span class="r-modal-label-name">Дата виїзду</span>
+        </label>
+      </div>
+      <button type="submit" class="r-modal-send-btn" data-modal-close-room>
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </form>
+  </div>
+</div>
+
     <load src="" />
     
   </body>
