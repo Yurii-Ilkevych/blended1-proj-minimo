@@ -53,12 +53,13 @@
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.01em;
+  font-style: normal;
   color: var(--map-adress-color);
   width: 210px;
   height: 47px;
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
-  padding: 8px 6px 10px 34px;
+  padding: 8px 4px 10px 34px;
   text-align: left;
   cursor: pointer;
 }
