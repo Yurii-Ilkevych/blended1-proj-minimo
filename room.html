@@ -15,7 +15,7 @@
     />
     
     <script type="module" crossorigin src="/blended1-proj-minimo/assets/styles-fac82e35.js"></script>
-    <link rel="stylesheet" href="/blended1-proj-minimo/assets/styles-22e4f23c.css">
+    <link rel="stylesheet" href="/blended1-proj-minimo/assets/styles-c3e23962.css">
   </head>
   <body>
     <header>
@@ -87,20 +87,21 @@
     <main>
         <!-- Task 16 - Hero room -->
 <section class="hero-room">
-  <div class="hero-room-container">
-    <a class="hero-room-link" href="https://goo.gl/maps/cxyWYQsDBJxXMkCH7"
-      >Україна, м. Полтава, вул. Маршала Бірюзова, 15</a
-    >
+  <div class="hero-room-container container">
     <ul class="hero-room-list-slider">
       <li class="hero-room-item-slider">
-        <svg width="37" height="21">
-          <use href="../img/task-15/left-rigt-svg.svg#icon-right"></use>
-        </svg>
+        <button type="button" class="hero-room-btn-slider">
+          <svg class="hero-room-svg-slider" width="37" height="21">
+            <use href="../img/task-15/left-rigt-svg.svg#icon-left"></use>
+          </svg>
+        </button>
       </li>
       <li class="hero-room-item-slider">
-        <svg width="37" height="21">
-          <use href="../img/task-15/left-rigt-svg.svg#icon-left"></use>
-        </svg>
+        <button type="button" class="hero-room-btn-slider">
+          <svg class="hero-room-svg-slider" width="37" height="21">
+            <use href="../img/task-15/left-rigt-svg.svg#icon-right"></use>
+          </svg>
+        </button>
       </li>
     </ul>
     <h1 class="hero-room-title">ДВОМІСНИЙ НОМЕР люкс</h1>
@@ -109,25 +110,48 @@
       Velit officia consequat duis enim velit mollit. Exercitation veniam
       consequat sunt nostrud amet.
     </p>
-    <ul class="hero-room-list-soc">
-      <li class="hero-room-item-soc">
-        <svg width="22" height="22">
-          <use href="../img/task-16/soc-icon-svg.svg#icon-insta"></use>
-        </svg>
-      </li>
-      <li class="hero-room-item-soc">
-        <svg width="20" height="20">
-          <use href="../img/task-16/soc-icon-svg.svg#icon-fb"></use>
-        </svg>
-      </li>
-      <li class="hero-room-item-soc">
-        <svg width="20" height="18" color="red">
-          <use href="../img/task-16/soc-icon-svg.svg#icon-twitter"></use>
-        </svg>
-      </li>
-    </ul>
-    <button class="hero-room-btn" type="button">Переглянути ціни</button>
+    <div class="hero-soc-btn-box">
+      <ul class="hero-room-list-soc">
+        <li class="hero-room-item-soc">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="social-link"
+            ><svg width="24" height="24" style="">
+              <use href="/blended1-proj-minimo/assets/icon-headerfooter-0ec0fecd.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="hero-room-item-soc">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="social-link-soc"
+            ><svg width="24" height="24" style="">
+              <use href="/blended1-proj-minimo/assets/icon-headerfooter-0ec0fecd.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="hero-room-item-soc">
+          <a
+            href="https://www.t.me/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="social-link"
+            ><svg width="24" height="24" style="">
+              <use href="/blended1-proj-minimo/assets/icon-headerfooter-0ec0fecd.svg#icon-telegram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <button class="hero-room-btn" type="button">Переглянути ціни</button>
+    </div>
   </div>
+  <a class="hero-room-address-link" href="https://goo.gl/maps/cxyWYQsDBJxXMkCH7"
+    >Україна, м. Полтава, вул. Маршала Бірюзова, 15</a
+  >
 </section>
 
         <!-- Task 17 - The first room secction "Amenities" -->
