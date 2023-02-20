@@ -28,6 +28,11 @@ background: #FFFFFF;
 border: 2px solid var(--akzent-yellow-colo);
 }
 
+.details-icon:hover,
+.details-icon:focus {
+  stroke: #F3C653;
+}
+
 @media screen and (max-width: 1023px) {
   .container {
     min-width: 320px;
@@ -36,14 +41,14 @@ border: 2px solid var(--akzent-yellow-colo);
     padding-right: 15px;
   }
 
-  .details {
+  .details-wrap {
     background: var(--footer-color);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../img/task6/bg-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
+  
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -54,7 +59,6 @@ border: 2px solid var(--akzent-yellow-colo);
     }
   }
 
-  .details-wrap {
     padding-top: 24px;
     padding-bottom: 40px;
   }
@@ -136,30 +140,29 @@ border: 2px solid var(--akzent-yellow-colo);
       padding-left: 47px;
       padding-right: 47px;  
   }
-  .details {
-    background: var(--footer-color);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(../img/task6/bg-tablet.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(../img/task6/bg-tablet-2x.jpg);
-    }
-  }
 
 .slider-mob-wrap {
   display: none;
 }
 
 .details-wrap {
+  background: var(--footer-color);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/task6/bg-tablet.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../img/task6/bg-tablet-2x.jpg);
+  }
+}
+
   padding-top: 48px;
   padding-bottom: 40px;
 }
@@ -232,7 +235,8 @@ margin-left: 145px;
       padding-right: 85px;  
   }
 
-  .details {
+
+  .details-wrap {
     background: var(--footer-color);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../img/task6/bg-desktop.jpg);
@@ -240,7 +244,6 @@ margin-left: 145px;
     background-position: center;
     background-size: cover;
     
-  }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -251,7 +254,6 @@ margin-left: 145px;
     }
   }
 
-  .details-wrap {
     padding-top: 48px;
     padding-bottom: 40px;
   }
@@ -272,6 +274,8 @@ margin-left: 145px;
     gap: 86px;
   }
 
-
+  .details-btn-list {
+    margin-top: 136px;
+  }
   
 }
