@@ -1,15 +1,10 @@
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+
+
+
+.r-modal-backdrop.is-hidden-r {
+  opacity: 0;
+  pointer-events: none;
+   }
 
 .r-modal-backdrop {
   position: fixed;
@@ -18,6 +13,16 @@
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   overflow: auto;
+
+opacity: 1;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.r-modal-backdrop.is-hidden-r .r-modal {
+  transform: translate( -50%, -50%) scale(5);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .r-modal {
@@ -28,8 +33,9 @@
   width: 100%;
   min-height: 780px;
   padding: 60px 15px;
-  transform: translate(-50%, -50%);
-
+  transform: translate(-50%, -50%) scaleX(1);
+  transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #fffdee;
 }
 
