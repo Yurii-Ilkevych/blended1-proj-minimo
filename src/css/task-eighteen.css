@@ -14,14 +14,14 @@
   background-color: rgba(46, 47, 66, 0.4);
   overflow: auto;
 
-opacity: 1;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .r-modal-backdrop.is-hidden-r .r-modal {
-  transform: translate( -50%, -50%) scale(5);
-  transition-duration: 250ms;
+  transform: translate( -50%, -50%) scale(0.5);
+  transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -34,8 +34,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   min-height: 780px;
   padding: 60px 15px;
   transform: translate(-50%, -50%) scaleX(1);
-  transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #fffdee;
 }
 
@@ -44,6 +44,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   top: 16px;
   right: 16px;
   width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   font-family: inherit;
   border: none;
@@ -104,10 +108,14 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   border: 1px solid #c79002;
   border-radius: 2px;
-  background-color: transparent;
+  background-color: #fffdee;
   outline: none;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.r-modal-arrow {
+  background-color: transparent;
 }
 
 .r-modal-option-name {
@@ -116,19 +124,53 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   height: 100px;
 }
 
-.r-modal-arrow::after {
+.r-modal-field {
+  position: relative;
+}
+
+.r-modal-field-thumb {
   position: absolute;
-  top: 22px;
-  right: 4px;
+  top: 0;
+  left:0;
+  display: flex;
+  min-width: 100%;
+  height: 54px;
+  margin: 0;
+  padding: 0;
+  padding-left: 12px;
+  align-items: center;
+
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: #808080;
+
+  border: 1px solid #c79002;
+  border-radius: 2px;
+  background-color: #fffdee;
+  outline: none;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.r-modal-field-thumb::after {
+  position: absolute;
+  top: 50%;
+  right: 22px;
   content: '';
   display: inline-block;
-  width: 36px;
+  width: 20px;
   height: 12px;
   pointer-events: none;
-  background-image: url(./img/modal-arrow.svg);
+  background-image: url(../img/modal/modal-arrow.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #fffdee;
+  background-color: transparent;
+
+  transform: translateY(-50%);
 }
 
 .r-modal-label-name {
@@ -146,6 +188,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .r-modal-send-btn {
   display: block;
+  padding: 0;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -165,7 +208,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
 
   cursor: pointer;
-  font-family: inherit;
   border: none;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -177,17 +219,15 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .r-modal-input:hover,
-.r-modal-input:focus {
+.r-modal-input:focus,
+.r-modal-field-thumb:hover,
+.r-modal-field-thumb:focus {
   border: 1px solid #f3c653;
 }
 
-.r-modal-input:hover + .r-modal-label-name,
-.r-modal-input:focus + .r-modal-label-name {
-  color: #f3c653;
-}
-
-.r-modal-arrow::after:hover,
-.r-modal-arrow::after:focus {
+.r-modal-field-thumb:hover + .r-modal-field-thumb::after,
+.r-modal-field-thumb:focus + .r-modal-field-thumb::after {
+  fill: #f3c653;
 }
 
 .r-modal-send-btn:hover,
@@ -199,6 +239,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 414px) {
   .r-modal {
     width: 414px;
+  }
+
+  .r-modal-field-thumb {
+    max-width: 414px;
   }
 }
 
@@ -222,11 +266,12 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     gap: 28px 16px;
   }
 
-  .r-modal-list:nth-child(3) {
+  .r-list {
     margin-left: 304px;
   }
 
-  .r-modal-input {
+  .r-modal-input,
+  .r-modal-field-thumb {
     width: 288px;
     height: 64px;
   }
@@ -241,8 +286,4 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     width: 592px;
   }
 
-  .r-modal-arrow::after {
-    top: 27px;
-    width: 41px;
-  }
 }
