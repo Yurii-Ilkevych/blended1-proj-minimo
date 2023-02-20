@@ -1,0 +1,238 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.t-modal-backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  overflow: auto;
+}
+
+.t-modal {
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  min-height: 668px;
+  padding: 60px 15px;
+  transform: translate(-50%, -50%);
+
+  background-color: #fffdee;
+}
+
+.t-modal-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  padding: 0;
+
+  background-color: transparent;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.t-modal-close-icon {
+  fill: #808080;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.t-modal-name {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+}
+
+.t-modal-form-thumb {
+  display: block;
+}
+
+.t-modal-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.t-modal-input {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: 54px;
+  margin: 0;
+  padding: 0;
+  padding-left: 12px;
+  margin-bottom: 8px;
+
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: #808080;
+
+  border: 1px solid #c79002;
+  border-radius: 2px;
+  background-color: transparent;
+  outline: none;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.t-modal-option-name {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+
+.t-modal-arrow::after {
+  position: absolute;
+  top: 22px;
+  right: 4px;
+  content: '';
+  display: inline-block;
+  width: 36px;
+  height: 12px;
+  pointer-events: none;
+  background-image: url(./img/modal-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fffdee;
+}
+
+.t-modal-label-name {
+  margin-left: 12px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #c79002;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.t-modal-send-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 64px;
+  margin-top: 40px;
+  text-align: center;
+  justify-content: center;
+  background: #000000;
+  border: 1px solid #f3c653;
+  border-radius: 2px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.t-modal-close-icon:hover,
+.t-modal-close-icon:focus {
+  fill: #000000;
+}
+
+.t-modal-input:hover,
+.t-modal-input:focus {
+  border: 1px solid #f3c653;
+}
+
+.t-modal-input:hover + .t-modal-label-name,
+.t-modal-input:focus + .t-modal-label-name {
+  color: #f3c653;
+}
+
+.t-modal-arrow::after:hover,
+.t-modal-arrow::after:focus {
+}
+
+.t-modal-send-btn:hover,
+.t-modal-send-btn:focus {
+  background: #f3c653;
+  color: #000000;
+}
+
+@media screen and (min-width: 414px) {
+  .t-modal {
+    width: 414px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .t-modal {
+    width: 712px;
+    min-height: 522px;
+    padding: 60px;
+  }
+
+  .t-modal-name {
+    margin-bottom: 36px;
+
+    font-size: 40px;
+    line-height: 1.15;
+  }
+
+  .t-modal-form-thumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px 16px;
+  }
+
+  .t-modal-input {
+    width: 288px;
+    height: 64px;
+  }
+
+  .t-modal-list {
+    margin-bottom: 0;
+  }
+
+  .t-modal-send-btn {
+    font-size: 24px;
+    line-height: 1.2;
+    width: 592px;
+  }
+
+  .t-modal-arrow::after {
+    top: 27px;
+    width: 41px;
+  }
+}
