@@ -98,7 +98,7 @@ padding-right: 41px;
 
 .contacts-map {
     border: 1px solid #BABABA;
-box-shadow: inset 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 border-radius: 2px;
 }
 
@@ -115,15 +115,15 @@ border-radius: 2px;
 
     .contacts-wrap {
         display: flex;
-        padding-top: 38px;
-        padding-bottom: 44px;
+        padding-top: 69px;
+        padding-bottom: 40px;
     }
 
     .contacts-logo {
         font-weight: 700;
 font-size: 64px;
 line-height: 1.08;
-margin-top: 18px;
+margin-top: -7px;
 margin-bottom: 8px;    }
 
 .contacts-text {
@@ -155,7 +155,7 @@ margin-bottom: 8px;    }
     width: 100%;
     max-width: 100%;
     height: auto;
-    
+box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
 }
 .contacts-map-text{
     padding-right: 6px;
