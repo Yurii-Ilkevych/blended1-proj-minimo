@@ -1,9 +1,9 @@
 <!-- Book Room Modal window -->
 <div class="r-modal-backdrop is-hidden-r" data-modal-room>
   <div class="r-modal">
-    <button type="button" class="r-modal-close-btn">
+    <button type="button" class="r-modal-close-btn" data-modal-close-room>
       <svg class="r-modal-close-icon" width="24" height="24">
-        <use href="./img/img.svg#icon-modal-close-btn"></use>
+        <use href="../img/modal/modal-arrow.svg"></use>
       </svg>
     </button>
     <h1 class="r-modal-name">ЗАБРОНЮВАТИ НОМЕР</h1>
@@ -31,24 +31,33 @@
           />
           <span class="r-modal-label-name">Номер телефону</span>
         </label>
-        <label class="r-modal-list r-modal-arrow">
-          <select class="r-modal-input" name="user-room" required>
-            <option value="" selected>Двомісний люкс</option>
-          </select>
-          <span class="r-modal-label-name">Категорія номеру</span>
-        </label>
-        <label class="r-modal-list r-modal-arrow">
-          <select class="r-modal-input" name="date-start" required>
-            <option value="" selected>Сьогодні</option>
-          </select>
-          <span class="r-modal-label-name">Дата заїзду</span>
-        </label>
-        <label class="r-modal-list r-modal-arrow">
-          <select class="r-modal-input" name="date-finish" required>
-            <option value="" selected>Сьогодні</option>
-          </select>
-          <span class="r-modal-label-name">Дата виїзду</span>
-        </label>
+        <div class="r-modal-field r-list">
+          <label class="r-modal-list">
+            <select class="r-modal-input" name="user-room" required>
+              <option value="">Двомісний люкс</option>
+            </select>
+            <span class="r-modal-label-name">Категорія номеру</span>
+          </label>
+          <div class="r-modal-field-thumb">Двомісний люкс</div>
+        </div>
+        <div class="r-modal-field">
+          <label class="r-modal-list">
+            <select class="r-modal-input" name="date-start" required>
+              <option value="">Сьогодні</option>
+            </select>
+            <span class="r-modal-label-name">Дата заїзду</span>
+          </label>
+          <div class="r-modal-field-thumb">Сьогодні</div>
+        </div>
+        <div class="r-modal-field">
+          <label class="r-modal-list">
+            <select class="r-modal-input" name="date-finish" required>
+              <option value="">Сьогодні</option>
+            </select>
+            <span class="r-modal-label-name">Дата виїзду</span>
+          </label>
+          <div class="r-modal-field-thumb">Сьогодні</div>
+        </div>
       </div>
       <button type="submit" class="r-modal-send-btn" data-modal-close-room>
         ОФОРМИТИ БРОНЮВАННЯ
