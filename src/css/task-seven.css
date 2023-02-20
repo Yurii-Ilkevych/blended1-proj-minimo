@@ -155,8 +155,8 @@ margin-bottom: 8px;    }
     width: 100%;
     max-width: 100%;
     height: auto;
+    
 }
-
 .contacts-map-text{
     padding-right: 6px;
 }
@@ -183,6 +183,10 @@ margin-bottom: 8px;    }
         padding-bottom: 74px;
     }
 
+    .contacts-logo {
+        margin-top: -9px;
+    }
+
     .contacts-text {
         width: 375px;
         font-weight: 600;
@@ -192,10 +196,14 @@ letter-spacing: 0.02em;}
 
 
     .contacts-right-wrap{
-        margin-left: 108px;
+        margin-left: 95px;
     }
 
     .contacts-map-link{
+        width: 100%;
+    }
+
+    .contacts-map {
         width: 100%;
     }
 }
