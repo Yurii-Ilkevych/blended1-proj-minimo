@@ -13,8 +13,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/blended1-proj-minimo/assets/task-eighteen-91fbb34a.js"></script>
-    <link rel="stylesheet" href="/blended1-proj-minimo/assets/task-eighteen-a7a33cdc.css">
+    <script type="module" crossorigin src="/blended1-proj-minimo/assets/task-twenty-fed6ccd2.js"></script>
+    <link rel="stylesheet" href="/blended1-proj-minimo/assets/task-twenty-09728b31.css">
   </head>
   <body>
     <header>
@@ -145,7 +145,7 @@
           </a>
         </li>
       </ul>
-      <button class="hero-room-btn" type="button">Переглянути ціни</button>
+      <button class="hero-room-btn" type="button" data-modal-open-price>Переглянути ціни</button>
     </div>
   </div>
   <a class="hero-room-address-link" href="https://goo.gl/maps/cxyWYQsDBJxXMkCH7"
@@ -322,7 +322,42 @@
   </div>
 </div>
 
-    <load src="" />
+    <!-- Room Price Modal window -->
+<div class="p-modal-backdrop is-hidden-p" data-modal-price>
+  <div class="p-modal">
+    <button type="button" class="p-modal-close-btn">
+      <svg class="p-modal-close-icon" width="24" height="24">
+        <use href="./img/img.svg#icon-modal-close-btn"></use>
+      </svg>
+    </button>
+    <h1 class="p-modal-name">ЦІНИ НА НОМЕР</h1>
+    <h2 class="p-modal-room">Двомісний люкс</h2>
+    <p class="p-modal-category">Категорія номеру</p>
+    <form class="p-modal-form">
+      <div class="p-modal-form-thumb">
+        <label class="p-modal-list p-modal-arrow">
+          <select class="p-modal-input" name="user-date" required>
+            <option value="" selected>1</option>
+          </select>
+          <span class="p-modal-label-name">Кількість ночей</span>
+        </label>
+        <label class="p-modal-list">
+          <input
+            class="p-modal-input"
+            type="text"
+            name="user-price"
+            placeholder="1000"
+            pattern="^[ 0-9]+$"
+            required
+          />
+          <span class="p-modal-label-name">грн</span>
+        </label>
+      </div>
+      <button type="submit" class="p-modal-send-btn" data-modal-close-price>ЗАБРОНЮВАТИ НОМЕР</button>
+    </form>
+  </div>
+</div>
+
     
   </body>
 </html>
