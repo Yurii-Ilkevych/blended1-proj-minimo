@@ -1,10 +1,11 @@
 .rest-menu-container {
   background-color: inherit;
   padding-bottom: 32px;
-  display: flex;
+    display: flex;
   flex-direction: column;
 }
 .menu-separate-box {
+
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -144,7 +145,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
-    max-height: 680px;
+    max-height: 800px;
     column-gap: 91px;
   }
 
@@ -171,6 +172,11 @@
   .dish-text {
     width: 262px;
   }
+
+  .ingridient {
+  margin-bottom: 0;
+
+}
   /* ------------BTN-------------- */
 
   .rest-book-table-btn {
