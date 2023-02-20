@@ -154,6 +154,7 @@
     height: 524px;
     margin-left: 0;
     margin-bottom: 0px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
 
   .home-about-two-wrap {
@@ -171,6 +172,7 @@
     width: 350px;
     height: 500px;
     margin-bottom: 0px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
   .home-about-two-wrap .home-about-restrong-text {
     margin-left: 398px;
@@ -190,6 +192,7 @@
 
   .about-restrong-photo-img {
     height: 194px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -232,6 +235,7 @@
     top: -33px;
     width: 460px;
     height: 574px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
 
   .home-about-two-wrap {
@@ -245,6 +249,7 @@
     width: 460px;
     height: 574px;
     margin-bottom: 0px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
   .home-about-two-wrap .home-about-restrong-text {
     margin-left: 492px;
@@ -264,5 +269,6 @@
 
   .about-restrong-photo-img {
     height: 254px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
 }
