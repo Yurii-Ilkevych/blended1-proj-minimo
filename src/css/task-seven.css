@@ -55,7 +55,7 @@ color: var(--brown-color);
     display: flex;
     align-items: center;
 background: #FFFFFF;
-border: 0.5px solid var(--akzent-yellow-colo);
+border: 0.5px solid var(--akzent-yellow-color);
 border-radius: 2px;
 padding: 9px 8px 7px 8px;
 margin-left: 22px;
