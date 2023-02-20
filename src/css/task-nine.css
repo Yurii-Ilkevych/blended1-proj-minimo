@@ -4,7 +4,7 @@
 
 .hero-restaurant {
   position: relative;
-    padding-top: 181px;
+  padding-top: 181px;
   padding-bottom: 20px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(./img/task-9/restaurant-bg-mob.jpg);
@@ -182,7 +182,7 @@
 
   .rest-hero-title {
     font-size: 128px;
-    line-height: 1.09;
+    line-height: 1.075;
     text-indent: 0.3em;
     margin-bottom: 16px;
   }
@@ -234,8 +234,8 @@
 
 @media screen and (min-width: 1280px) {
   .hero-restaurant {
-       padding-top: 164px;
-       padding-bottom: 64px;
+    padding-top: 164px;
+    padding-bottom: 64px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(./img/task-9/restaurant-bg.jpg);
   }
@@ -252,18 +252,21 @@
   }
   .rest-hero-title {
     font-size: 128px;
-    line-height: 1.09;
+    line-height: 1.075;
     margin-bottom: 32px;
   }
   .rest-hero-pretitle {
-  margin-bottom: 64px;
+    font-size: 20px;
+    margin-bottom: 64px;
   }
 
   .rest-hero-slogan {
     margin-bottom: 144px;
+    font-size: 36px;
+    line-height: 1.15;
   }
   .rest-map {
-        top: 600px;
+    top: 600px;
     left: 85px;
     line-height: calc(20 / 16);
     width: 285px;
@@ -277,11 +280,10 @@
     left: 10px;
     bottom: 16px;
   }
- .rest-map-link {
+  .rest-map-link {
     font-size: 16px;
   }
   .rest-modal-btn-list {
-    display: flex;
     flex-wrap: nowrap;
     justify-content: flex-end;
     gap: 60px;
@@ -289,7 +291,7 @@
     margin-bottom: 0;
   }
 
-    .rest-social-list {
-    display:none;
+  .rest-social-list {
+    display: none;
   }
-  }
+}
