@@ -159,3 +159,17 @@ nav {
     display: none;
   }
 }
+@media screen and (min-width: 1280px) {
+  .reviews-mobile-tablet.social-header__list {
+   align-items: center;
+   justify-content: center;
+  }
+  .social-header__list>.social__item {
+  margin-bottom: 0;
+}
+.social__item .social__link{
+width: 24px;
+border: none;
+}
+
+}
