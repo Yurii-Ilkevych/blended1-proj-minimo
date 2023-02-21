@@ -23,7 +23,7 @@
 @import url('./task-fiveteen.css');
 @import url('./task-sixteen.css');
 @import url('./task-seventeen.css');
-@import url('./task-eighteen.css');
+
 @import url('./task-nineteen.css');
 @import url('./task-twenty.css');
 @import url('./additional-task-one.css');
@@ -34,6 +34,7 @@
 @import url('./additional-task-six.css');
 @import url('./additional-task-seven.css');
 @import url('./additional-task-eight.css');
+@import url('./task-eighteen.css');
 
 body{
   background-color: var(--fon-lemon-color);
@@ -112,3 +113,7 @@ body{
         clip-path: inset(50%);
         margin: -1px;
     }
+
+
+
+    

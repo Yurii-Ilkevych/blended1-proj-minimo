@@ -121,7 +121,7 @@
 .two-adult-item-btn:hover,
 .two-adult-item-btn:focus {
   background-color: var(--white-color);
-  border-color: var(--akzent-yellow-colo);
+  border-color: var(--akzent-yellow-color);
 }
 
 .two-adult-item-btn:not(:last-child) {
@@ -135,7 +135,7 @@
   font-size: 16px;
   line-height: 1, 25;
   letter-spacing: 0.02em;
-  color: var(--akzent-yellow-colo);
+  color: var(--akzent-yellow-color);
 }
 
 .two-adult-btn {
@@ -144,7 +144,7 @@
   font-size: 16px;
   line-height: 1, 25;
   letter-spacing: 0.02em;
-  color: var(--akzent-yellow-colo);
+  color: var(--akzent-yellow-color);
   background: inherit;
   border: none;
 }
