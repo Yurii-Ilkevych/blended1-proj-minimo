@@ -239,9 +239,7 @@
     transform: translate(-100%, 150%);
   }
 
-  .hotel-three-list-slider {
-    
-  }
+ 
 
   .hotel-three-list-slider {
     position: relative;
@@ -314,8 +312,8 @@
 
   .hotel-three-list-slider {
     position: absolute;
-    top: 88%;
-    left: 62%;
+    top: 80%;
+    left: 46%;
     margin-bottom: 0;
   }
 
