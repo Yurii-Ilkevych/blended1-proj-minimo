@@ -15,7 +15,7 @@
     />
     
     <script type="module" crossorigin src="/blended1-proj-minimo/assets/task-eighteen-7ae64c72.js"></script>
-    <link rel="stylesheet" href="/blended1-proj-minimo/assets/task-eighteen-30bc201b.css">
+    <link rel="stylesheet" href="/blended1-proj-minimo/assets/task-eighteen-fc772c93.css">
   </head>
   <body>
     <header>
@@ -160,50 +160,110 @@
 
         <!-- Task 13 - The first hotel section "1 room luxe for 2 adult" -->
 <section class="hotel-lux">
-  <div class="container">
-    <div class="hotel-lux-left-side">
-      <p class="hotel-lux-pretitle-description">Amet minim mollit non</p>
-      <p class="hotel-lux-pretitle">Mimiho</p>
-      <h2 class="hotel-lux-title">ДВОМІСНИЙ НОМЕР люкс</h2>
-      <p class="hotel-lux-title-description">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
-      <ul class="hotel-lux-img-list">
-        <li>
-          <img
-            src="#"
-            alt="bathroom view"
-            srcset="#"
-            width="254"
-            height="254"
-          />
+  <div class="container container-lux-hotel">
+    <p class="hotel-lux-pretitle-description">Amet minim mollit non</p>
+    <p class="hotel-lux-pretitle">Mimiho</p>
+    <h2 class="hotel-lux-title">ДВОМІСНИЙ НОМЕР люкс</h2>
+    <p class="hotel-lux-title-description">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+    <picture>
+      <source
+        srcset="/blended1-proj-minimo/assets/2-adult-d5c3890d.jpg 1x, /blended1-proj-minimo/assets/2-adult-2x-a2ac5376.jpg 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="/blended1-proj-minimo/assets/2-adult-tab-949d81b3.jpg 1x, /blended1-proj-minimo/assets/2-adult-tab-2x-a2060dbb.jpg 2x"
+        media="(min-width: 1024px)"
+      />
+      <source
+        srcset="/blended1-proj-minimo/assets/2-adult-mob-3c07816e.jpg 1x, /blended1-proj-minimo/assets/2-adult-mob-2x-17e98482.jpg 2x"
+        media="(min-width: 320px)"
+      />
+      <img
+        class="hotel-lux-room-img"
+        src="/blended1-proj-minimo/assets/2-adult-d5c3890d.jpg"
+        alt="1 room for 2 adult"
+        width="460"
+        height="574"
+      />
+    </picture>
+    <div class="hotel-lux-img-btn-box">
+      <ul class="hotel-lux-list-img">
+        <li class="hotel-lux-item-img">
+          <picture>
+            <source
+              srcset="/blended1-proj-minimo/assets/arrangement-9eb0d870.jpg 1x, /blended1-proj-minimo/assets/arrangement-2x-eb28ca79.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/blended1-proj-minimo/assets/arrangement-mob-tab-e9a3cda9.jpg 1x, /blended1-proj-minimo/assets/arrangement-mob-tab-2x-814f096b.jpg 2x"
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="/blended1-proj-minimo/assets/arrangement-mob-tab-e9a3cda9.jpg 1x, /blended1-proj-minimo/assets/arrangement-mob-tab-2x-814f096b.jpg 2x"
+              media="(min-width: 320px)"
+            />
+            <img
+              class="hotel-lux-slider-img"
+              src="/blended1-proj-minimo/assets/arrangement-9eb0d870.jpg"
+              alt="bathroom"
+              width="254"
+              height="254"
+            />
+          </picture>
         </li>
-        <li>
-          <img
-            src="#"
-            alt="view from holel window"
-            srcset="#"
-            width="254"
-            height="254"
-          />
+        <li class="hotel-lux-item-img">
+          <picture>
+            <source
+              srcset="/blended1-proj-minimo/assets/cup-tea-4ce7547f.jpg 1x, /blended1-proj-minimo/assets/cup-tea-2x-d4b2b566.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/blended1-proj-minimo/assets/cup-tea-mob-tab-72f773d7.jpg 1x, /blended1-proj-minimo/assets/cup-tea-mob-tab-2x-64f62a35.jpg 2x"
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="/blended1-proj-minimo/assets/cup-tea-mob-tab-72f773d7.jpg 1x, /blended1-proj-minimo/assets/cup-tea-mob-tab-2x-64f62a35.jpg 2x"
+              media="(min-width: 320px)"
+            />
+            <img
+              class="hotel-lux-slider-img"
+              src="/blended1-proj-minimo/assets/cup-tea-4ce7547f.jpg"
+              alt="cup tea"
+              width="254"
+              height="254"
+            />
+          </picture>
         </li>
       </ul>
-      <ul class="hotel-lux-scrol">
-        <li>
-          <svg class="hotel-lux-scrol-icon" width="32" height="32">
-            <use href="#"></use>
-          </svg>
+      <ul class="hotel-lux-list-slider">
+        <li class="hotel-lux-item-slider">
+          <button type="button" class="hotel-lux-left-btn">
+            <svg width="32" height="32">
+              <use href="/blended1-proj-minimo/assets/left-rigt-svg-9489d98c.svg#icon-left"></use>
+            </svg>
+          </button>
         </li>
-        <li>
-          <svg class="hotel-lux-scrol-icon" width="32" height="32">
-            <use href="#"></use>
-          </svg>
+        <li class="hotel-lux-item-slider">
+          <button type="button" class="hotel-lux-right-btn">
+            <svg width="32" height="32">
+              <use href="/blended1-proj-minimo/assets/left-rigt-svg-9489d98c.svg#icon-right"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+      <ul class="hotel-lux-list-btn">
+        <li class="hotel-lux-item-btn">
+          <a class="hotel-lux-link" href="./room.html">Детальніше</a>
+        </li>
+        <li class="hotel-lux-item-btn">
+          <button class="hotel-lux-btn" type="button">Переглянути ціни</button>
         </li>
       </ul>
     </div>
-
     <div class="hotel-lux-right-side">
       <img src="#" alt="room view" srcset="#" width="780" height="574" />
       <div class="hotel-lux-btn-list">
