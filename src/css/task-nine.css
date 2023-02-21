@@ -207,7 +207,7 @@
   }
 
   .rest-map-link::before {
-    content: url(./img/task-9/icon-location-tab.svg);
+    content: url(../img/task-9/icon-location-tab.svg);
     width: 24px;
     height: 24px;
     left: 10px;
