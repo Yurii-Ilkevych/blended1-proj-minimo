@@ -434,53 +434,68 @@
 
     </footer>
     <!-- Modal -->
-    <!-- Book Table Modal window -->
+    <!-- Book Room Modal window -->
 <div class="overlay js-overlay-modal">
-  <div class="t-modal modal" data-modal="3">
-    <button type="button" class="t-modal-close-btn js-modal-close">
-      <svg class="t-modal-close-icon" width="24" height="24">
-        <use href="./img/img.svg#icon-modal-close-btn"></use>
+  <div class="r-modal modal" data-modal="1">
+    <button type="button" class="r-modal-close-btn js-modal-close">
+      <svg class="r-modal-close-icon" width="24" height="24">
+        <use href="../img/modal/modal-arrow.svg"></use>
       </svg>
     </button>
-    <h1 class="t-modal-name">ЗАБРОНЮВАТИ СТОЛИК</h1>
-    <form class="t-modal-form">
-      <div class="t-modal-form-thumb">
-        <label class="t-modal-list">
+    <h1 class="r-modal-name">ЗАБРОНЮВАТИ НОМЕР</h1>
+    <form class="r-modal-form">
+      <div class="r-modal-form-thumb">
+        <label class="r-modal-list">
           <input
-            class="t-modal-input"
+            class="r-modal-input"
             type="text"
             name="user-name"
             placeholder="Ваше ім’я"
             pattern="^[А-Яа-яЁё\s]+$"
             required
           />
-          <span class="t-modal-label-name">На кого забронювати столик?</span>
+          <span class="r-modal-label-name">На кого забронювати номер?</span>
         </label>
-        <label class="t-modal-list t-modal-arrow">
-          <select class="t-modal-input" name="user-number" required>
-            <option value="" selected>2</option>
-          </select>
-          <span class="t-modal-label-name">Столик на яку кількість осіб?</span>
-        </label>
-        <label class="t-modal-list">
+        <label class="r-modal-list">
           <input
-            class="t-modal-input"
+            class="r-modal-input"
             type="tel"
             name="user-tel"
             placeholder="+38 (___) ___-__-__"
             pattern="^+380\d{3}\d{2}\d{2}\d{2}$"
             required
           />
-          <span class="t-modal-label-name">Номер телефону</span>
+          <span class="r-modal-label-name">Номер телефону</span>
         </label>
-        <label class="t-modal-list t-modal-arrow">
-          <select class="t-modal-input" name="user-date" required>
-            <option value="" selected>Сьогодні</option>
-          </select>
-          <span class="t-modal-label-name">На яку дату бронювати?</span>
-        </label>
+        <div class="r-modal-field r-list">
+          <label class="r-modal-list">
+            <select class="r-modal-input" name="user-room" required>
+              <option value="">Двомісний люкс</option>
+            </select>
+            <span class="r-modal-label-name">Категорія номеру</span>
+          </label>
+          <div class="r-modal-field-thumb">Двомісний люкс</div>
+        </div>
+        <div class="r-modal-field">
+          <label class="r-modal-list">
+            <select class="r-modal-input" name="date-start" required>
+              <option value="">Сьогодні</option>
+            </select>
+            <span class="r-modal-label-name">Дата заїзду</span>
+          </label>
+          <div class="r-modal-field-thumb">Сьогодні</div>
+        </div>
+        <div class="r-modal-field">
+          <label class="r-modal-list">
+            <select class="r-modal-input" name="date-finish" required>
+              <option value="">Сьогодні</option>
+            </select>
+            <span class="r-modal-label-name">Дата виїзду</span>
+          </label>
+          <div class="r-modal-field-thumb">Сьогодні</div>
+        </div>
       </div>
-      <button type="submit" class="t-modal-send-btn">
+      <button type="submit" class="r-modal-send-btn" >
         ОФОРМИТИ БРОНЮВАННЯ
       </button>
     </form>
