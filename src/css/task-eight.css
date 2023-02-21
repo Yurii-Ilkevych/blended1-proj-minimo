@@ -163,8 +163,20 @@
   }
   .footer-social-name {
     display: block;
-=======
-footer {
+  }}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .footer {
   background-color: var(--footer-color);
 }
 
@@ -370,4 +382,4 @@ footer {
     display: none;
 
   }
-}
+} */
