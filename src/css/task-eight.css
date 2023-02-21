@@ -1,3 +1,169 @@
+
+.footer {
+  background: #0e0c07;
+  display: flex;
+  align-items: center;
+}
+
+.footer.container {
+  padding-top: 40px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  padding-left: 59px;
+}
+
+.footer-logo {
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  color: #f3c653;
+  text-transform: uppercase;
+  margin: auto 0;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+.footer-navigation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.footer-navigation-link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+  color: #f3c653;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.footer-social-item {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-social-name {
+  display: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: #f3c653;
+}
+.footer-social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* --------------------------------Tablet-------------------------------------- */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .footer.container {
+    padding-top: 80px;
+    padding-right: 122px;
+    padding-bottom: 80px;
+    padding-left: 154px;
+  }
+  .footer-logo {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    letter-spacing: 0.3em;
+  }
+  .footer-navigation {
+    flex-direction: row;
+    margin-left: auto;
+  }
+  .footer-navigation-list {
+    margin-bottom: 0px;
+  }
+
+  .footer-social-list {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 12px;
+    margin-left: 137px;
+  }
+  .footer-social-item {
+    width: auto;
+    height: auto;
+  }
+  .footer-social-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 144px;
+    height: 40px;
+    padding: 8px 12px;
+    border: 0.5px solid #f3c653;
+    border-radius: 2px;
+  }
+  .footer-social-name {
+    display: block;
+  }
+}
+
+/* --------------------------------Desktop-------------------------------------- */
+@media screen and (min-width: 1280px) {
+  .footer.container {
+    padding-top: 80px;
+    padding-right: 186px;
+    padding-bottom: 80px;
+    padding-left: 216px;
+  }
+  .footer-logo {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    letter-spacing: 0.3em;
+  }
+  .footer-navigation {
+    flex-direction: row;
+    margin-left: auto;
+  }
+  .footer-navigation-list {
+    margin-bottom: 0px;
+  }
+  .footer-social-list {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 12px;
+    margin-left: 199px;
+  }
+  .footer-social-item {
+    width: auto;
+    height: auto;
+  }
+  .footer-social-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 144px;
+    height: 40px;
+    padding: 8px 12px;
+    border: 0.5px solid #f3c653;
+    border-radius: 2px;
+  }
+  .footer-social-name {
+    display: block;
+=======
 footer {
   background-color: var(--footer-color);
 }
@@ -202,5 +368,6 @@ footer {
 @media screen and (max-width: 1023.9px) {
   .reviews-mobile {
     display: none;
+
   }
 }
