@@ -1,12 +1,18 @@
 
 
 
-.r-modal-backdrop.is-hidden-r {
+/* .r-modal-backdrop.is-hidden-r {
   opacity: 0;
   pointer-events: none;
+   } */
+
+   .overlay.active{
+    opacity: 1;
+   visibility: visible;
    }
 
-.r-modal-backdrop {
+
+.overlay {
   position: fixed;
   top: 0;
   width: 100%;
@@ -14,29 +20,55 @@
   background-color: rgba(46, 47, 66, 0.4);
   overflow: auto;
 
-  opacity: 1;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+  opacity: 0;
+  visibility: hidden;
+  z-index: 20;
 }
 
-.r-modal-backdrop.is-hidden-r .r-modal {
+/* .r-modal-backdrop.is-hidden-r .r-modal {
   transform: translate( -50%, -50%) scale(0.5);
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} */
+.modal.active{
+   opacity: 1;
+   visibility: visible;
 }
 
-.r-modal {
+
+
+
+.modal{
   box-sizing: border-box;
   position: absolute;
   top: 50%;
   left: 50%;
   width: 100%;
-  min-height: 780px;
+
   padding: 60px 15px;
   transform: translate(-50%, -50%) scaleX(1);
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #fffdee;
+
+
+  z-index: 30;
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
+
+.r-modal {
+  
+  min-height: 780px;
+
 }
 
 .r-modal-close-btn {
@@ -236,7 +268,7 @@
   color: #000000;
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 320px) {
   .r-modal {
     width: 414px;
   }
