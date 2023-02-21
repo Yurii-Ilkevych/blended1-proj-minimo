@@ -4,7 +4,7 @@
   position: relative;
   text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(/img/task-2/home-hero-bg-img-mobile.jpg);
+    url(../img/task-2/home-hero-bg-img-mobile.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -118,7 +118,7 @@
   screen and (min-resolution: 2dppx) and (max-width: 1023px) {
   .home-hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(/img/task-2/home-hero-bg-img-mobile@2x.jpg);
+      url(../img/task-2/home-hero-bg-img-mobile@2x.jpg);
   }
 }
 
@@ -128,7 +128,7 @@
   .home-hero {
     position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(/img/task-2/home-hero-bg-img-tablet.jpg);
+      url(../img/task-2/home-hero-bg-img-tablet.jpg);
     padding-bottom: 15px;
   }
 
@@ -189,7 +189,7 @@
   screen and (min-resolution: 2dppx) and (min-width: 1024px) and (max-width: 1279px) {
   .home-hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(/img/task-2/home-hero-bg-img-tablet@2x.jpg);
+      url(../img/task-2/home-hero-bg-img-tablet@2x.jpg);
   }
 }
 
@@ -199,7 +199,7 @@
   .home-hero {
     position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(/img/task-2/home-hero-bg-img-desktop.jpg);
+      url(../img/task-2/home-hero-bg-img-desktop.jpg);
     padding: 164px 15px 65px;
     height: 720px;
   }
@@ -256,6 +256,6 @@
   screen and (min-resolution: 2dppx) and (min-width: 1280px) {
   .home-hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(/img/task-2/home-hero-bg-img-desktop@2x.jpg);
+      url(../img/task-2/home-hero-bg-img-desktop@2x.jpg);
   }
 }
