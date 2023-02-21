@@ -9,6 +9,8 @@
    .overlay.active{
     opacity: 1;
    visibility: visible;
+   transition-duration: 300ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    }
 
 
@@ -19,11 +21,8 @@
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   overflow: auto;
-
-  transition-duration: 250ms;
+   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-
 
   opacity: 0;
   visibility: hidden;
@@ -38,6 +37,9 @@
 .modal.active{
    opacity: 1;
    visibility: visible;
+   transform: translate( -50%, -50%) scale(0.5);
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -269,7 +271,8 @@
 }
 
 @media screen and (min-width: 320px) {
-  .r-modal {
+  .r-modal,
+  .modal {
     width: 414px;
   }
 
@@ -279,7 +282,8 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .r-modal {
+  .r-modal,
+  .modal {
     width: 712px;
     min-height: 638px;
     padding: 60px;
