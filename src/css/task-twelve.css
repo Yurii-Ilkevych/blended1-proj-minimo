@@ -1,0 +1,239 @@
+.hero-hotel {
+  position: relative;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../img/task_12/bg-hero-room-mob-1x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 414px;
+  padding: 181px 15px 20px;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-hotel {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../img/task_12/bg-hero-room-mob-2x.jpg);
+  }
+}
+
+.title-hotel {
+  font-family: 'Film P3';
+  font-size: 96px;
+  line-height: calc(103 / 96);
+  letter-spacing: 0.3em;
+  color: var(--white-color);
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  text-indent: 0.3em;
+}
+.sub-title-hotel {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  margin-bottom: 178px;
+}
+
+.hero-icon-nav {
+  position: absolute;
+  top: 64px;
+  right: 15px;
+  display: block;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: var(--map-adress-color);
+  width: 210px;
+  height: 47px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  padding: 8px 0 9px 34px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.hero-icon-nav::before {
+  content: url(../img/task_12/icon-location.svg);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 6px;
+  bottom: 14px;
+}
+.hotel-map-link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: var(--map-adress-color);
+}
+.hero-hotel-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 58px;
+}
+.hero-btn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: var(--akzent-yellow-color);
+  width: 236px;
+  height: 48px;
+  border: 2px solid var(--white-color);
+  border-radius: 25px;
+  padding: 14px 20px;
+  vertical-align: top;
+  background: none;
+  transition: 250ms;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background: var(--white-color);
+  border-color: var(--akzent-yellow-color);
+}
+
+.hero-soc-list {
+  display: flex;
+  gap: 21px;
+}
+
+/* ----------------Tablet-------------------- */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .hero-hotel {
+    padding-top: 188px;
+    padding-bottom: 15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../img/task_12/bg-hero-room-tab-1x.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px) and (max-width: 1279px),
+    screen and (min-resolution: 192dpi) and (min-width: 1024px) and (max-width: 1279px),
+    screen and (min-resolution: 2dppx) and (min-width: 1024px) and (max-width: 1279px) {
+    .hero-hotel {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../img/task_12/bg-hero-room-tab-2x.jpg);
+    }
+  }
+  .title-hotel {
+    font-size: 128px;
+    line-height: 1;
+    text-indent: 0.3em;
+    margin-bottom: 32px;
+  }
+  .sub-title-hotel {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 226px;
+  }
+
+  .hero-icon-nav {
+    top: 600px;
+    left: 47px;
+    line-height: calc(20 / 16);
+    width: 285px;
+    height: 56px;
+    padding: 8px 8px 8px 44px;
+  }
+  .hero-icon-nav::before {
+    content: url(../img/task_12/icon-location-tab.svg);
+    width: 24px;
+    height: 24px;
+    left: 10px;
+    bottom: 16px;
+  }
+
+  .hotel-map-link {
+    font-size: 16px;
+  }
+  .hero-hotel-buttons {
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: 40px;
+    margin-bottom: 25px;
+  }
+
+  .hero-soc-list {
+    display: flex;
+    gap: 20px;
+    height: 24px;
+  }
+}
+
+/* ---------Desktop------------ */
+@media screen and (min-width: 1280px) {
+  .hero-hotel {
+    padding-top: 164px;
+    padding-bottom: 64px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../img/task_12/bg-hero-room-desk-1x.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (min-resolution: 192dpi) and (min-width: 1280px),
+    screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+    .hero-hotel {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../img/task_12/bg-hero-room-desk-2x.jpg);
+    }
+  }
+
+  .title-hotel {
+    font-size: 128px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
+  .sub-title-hotel {
+    margin-bottom: 249px;
+  }
+
+  .hero-icon-nav {
+    top: 600px;
+    left: 85px;
+    line-height: calc(20 / 16);
+    width: 285px;
+    height: 56px;
+    padding: 8px 8px 8px 44px;
+  }
+  .hero-icon-nav::before {
+    content: url(../img/task_12/icon-location-tab.svg);
+    width: 24px;
+    height: 24px;
+    left: 10px;
+    bottom: 16px;
+  }
+
+  .hotel-map-link {
+    font-size: 16px;
+  }
+
+  .hero-hotel-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: 60px;
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+
+  .hero-soc-list {
+    display: none;
+  }
+}

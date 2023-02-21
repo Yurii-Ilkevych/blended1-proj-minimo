@@ -108,9 +108,10 @@
   width: 30px;
   height: 17px;
   fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.about-restrong-button-svg:hover,
-.about-restrong-button-svg:focus {
+.about-restrong-button-btn:hover .about-restrong-button-svg,
+.about-restrong-button-btn:focus .about-restrong-button-svg {
   fill: var(--akzent-yellow-color);
 }
 
