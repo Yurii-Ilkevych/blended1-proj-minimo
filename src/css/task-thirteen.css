@@ -7,7 +7,12 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .container-lux-hotel {
+  /* .container-lux-hotel {
+    overflow: hidden;
+  } */
+
+
+  .hotel-lux {
     overflow: hidden;
   }
 }
@@ -69,6 +74,7 @@
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
+
 
 .hotel-lux-slider-img {
   max-width: 194px;
@@ -155,7 +161,12 @@
   .container-lux-hotel {
     position: relative;
   }
-
+  .hotel-lux-room-img {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+  .hotel-lux-slider-img {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
   .hotel-lux {
     padding-top: 62px;
     padding-bottom: 40px;
@@ -234,7 +245,12 @@
     padding-bottom: 1px;
     margin: 0 auto;
   }
-
+  .hotel-lux-room-img {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+  .hotel-lux-slider-img {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
   .hotel-lux {
     padding-top: 72px;
     padding-bottom: 40px;
