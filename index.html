@@ -13,8 +13,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/blended1-proj-minimo/assets/task-twenty-fed6ccd2.js"></script>
-    <link rel="stylesheet" href="/blended1-proj-minimo/assets/task-twenty-ed75302f.css">
+    <script type="module" crossorigin src="/blended1-proj-minimo/assets/task-eighteen-7ae64c72.js"></script>
+    <link rel="stylesheet" href="/blended1-proj-minimo/assets/task-eighteen-31c2df16.css">
   </head>
   <body>
     <header>
@@ -95,12 +95,12 @@
       <p class="home-hero-slogan">СМАК ЖИТТЯ 24/7</p>
       <ul class="home-hero-reservation">
         <li class="home-hero-reservation-item">
-          <button type="button" class="home-hero-reservation-btn" data-modal-open-table>
+          <button type="button" class="home-hero-reservation-btn js-open-modal" data-modal="3">
             Забронювати столик
           </button>
         </li>
         <li class="home-hero-reservation-item">
-          <button type="button" class="home-hero-reservation-btn" data-modal-open-room>
+          <button type="button" class="home-hero-reservation-btn js-open-modal" data-modal="1">
             Забронювати номер
           </button>
         </li>
@@ -702,9 +702,9 @@
     </footer>
     <!-- Modal -->
     <!-- Book Room Modal window -->
-<div class="r-modal-backdrop is-hidden-r" data-modal-room>
-  <div class="r-modal">
-    <button type="button" class="r-modal-close-btn" data-modal-close-room>
+<div class="overlay js-overlay-modal">
+  <div class="r-modal modal" data-modal="1">
+    <button type="button" class="r-modal-close-btn js-modal-close">
       <svg class="r-modal-close-icon" width="24" height="24">
         <use href="../img/modal/modal-arrow.svg"></use>
       </svg>
@@ -762,7 +762,7 @@
           <div class="r-modal-field-thumb">Сьогодні</div>
         </div>
       </div>
-      <button type="submit" class="r-modal-send-btn" data-modal-close-room>
+      <button type="submit" class="r-modal-send-btn" >
         ОФОРМИТИ БРОНЮВАННЯ
       </button>
     </form>
@@ -770,9 +770,9 @@
 </div>
 
     <!-- Book Table Modal window -->
-<div class="t-modal-backdrop is-hidden-t" data-modal-table>
-  <div class="t-modal">
-    <button type="button" class="t-modal-close-btn">
+<div class="overlay js-overlay-modal">
+  <div class="t-modal modal" data-modal="3">
+    <button type="button" class="t-modal-close-btn js-modal-close">
       <svg class="t-modal-close-icon" width="24" height="24">
         <use href="./img/img.svg#icon-modal-close-btn"></use>
       </svg>
@@ -815,7 +815,7 @@
           <span class="t-modal-label-name">На яку дату бронювати?</span>
         </label>
       </div>
-      <button type="submit" class="t-modal-send-btn" data-modal-close-table>
+      <button type="submit" class="t-modal-send-btn">
         ОФОРМИТИ БРОНЮВАННЯ
       </button>
     </form>
