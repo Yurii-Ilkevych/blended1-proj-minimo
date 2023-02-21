@@ -44,7 +44,7 @@ border: 2px solid var(--akzent-yellow-color);
   .details-wrap {
     background: var(--footer-color);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(./img/task6/bg-mobile.jpg);
+      url(../img/task6/bg-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -55,7 +55,7 @@ border: 2px solid var(--akzent-yellow-color);
     (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(./img/task6/bg-mobile-2x.jpg);
+        url(../img/task6/bg-mobile-2x.jpg);
     }
   }
 
@@ -149,7 +149,7 @@ border: 2px solid var(--akzent-yellow-color);
 .details-wrap {
   background: var(--footer-color);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./img/task6/bg-tablet.jpg);
+    url(../img/task6/bg-tablet.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -159,7 +159,7 @@ border: 2px solid var(--akzent-yellow-color);
   (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(./img/task6/bg-tablet-2x.jpg);
+      url(../img/task6/bg-tablet-2x.jpg);
   }
 }
 
@@ -239,7 +239,7 @@ margin-left: 145px;
   .details-wrap {
     background: var(--footer-color);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(./img/task6/bg-desktop.jpg);
+      url(../img/task6/bg-desktop.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -250,7 +250,7 @@ margin-left: 145px;
     (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(./img/task6/bg-desktop-2x.jpg);
+        url(../img/task6/bg-desktop-2x.jpg);
     }
   }
 
