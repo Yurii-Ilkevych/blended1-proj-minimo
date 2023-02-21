@@ -1,0 +1,14 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-modal-arrow" viewBox="0 0 53 32">
+<path d="M1.21 2.505c0.75-0.75 1.767-1.171 2.828-1.171s2.078 0.421 2.828 1.171l19.8 19.8 19.8-19.8c0.754-0.729 1.765-1.132 2.814-1.123s2.052 0.43 2.794 1.171c0.742 0.742 1.162 1.745 1.171 2.794s-0.394 2.059-1.123 2.814l-22.628 22.628c-0.75 0.75-1.767 1.171-2.828 1.171s-2.078-0.421-2.828-1.171l-22.628-22.628c-0.75-0.75-1.171-1.767-1.171-2.828s0.421-2.078 1.171-2.828z"></path>
+</symbol>
+<symbol id="" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M27.428 3.429l-24 24"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M3.428 3.429l24 24"></path>
+</symbol>
+<symbol id="icon-modal-close-btn" viewBox="0 0 8 8">
+    <path d="M8 .806 7.194 0 4 3.194.806 0 0 .806 3.194 4 0 7.194.806 8 4 4.806 7.194 8 8 7.194 4.806 4 8 .806Z"/>
+/symbol>
+</defs>
+</svg>
