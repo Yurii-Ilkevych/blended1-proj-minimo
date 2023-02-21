@@ -149,14 +149,16 @@
   border: none;
 }
 
+/* ----------------TABLET------------------------------ */
+
 @media screen and (min-width: 1024px) {
   .container-lux-hotel {
     position: relative;
   }
 
   .hotel-lux {
-    padding-top: 64px;
-    padding-bottom: 104px;
+    padding-top: 62px;
+    padding-bottom: 40px;
   }
 
   .hotel-lux-pretitle-description {
@@ -183,14 +185,14 @@
     line-height: 1.25;
     max-width: 439px;
     max-height: 80px;
-    margin-bottom: 174px;
+    margin-bottom: 176px;
   }
 
   .hotel-lux-list-img {
     display: flex;
     column-gap: 40px;
     right: 0;
-    margin-bottom: 0;
+    margin-bottom: 64px;
   }
 
   .hotel-lux-room-img {
@@ -198,7 +200,7 @@
     max-width: 400px;
     max-height: 524px;
     margin: 0;
-    right: 80px;
+    right: 65px;
     top: -96px;
   }
 
@@ -214,19 +216,23 @@
     position: absolute;
     top: 107%;
     left: 100%;
-    transform: translate(-100%, -150%);
+    transform: translate(-100%, -210%);
+  }
+
+  .hotel-lux-list-slider {
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    margin-bottom: 0;
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .hotel-lux-list-slider {
-    display: none;
-  }
-}
+/* ----------------------DESCTOP------------------------------ */
 
 @media screen and (min-width: 1280px) {
   .container-lux-hotel {
     padding-bottom: 1px;
+    margin: 0 auto;
   }
 
   .hotel-lux {
@@ -251,28 +257,29 @@
 
   .hotel-lux-title-description {
     max-width: 400px;
-    max-height: 83px;
     margin-bottom: 188px;
   }
 
   .hotel-lux-room-img {
     max-width: 460px;
     max-height: 574px;
-  }
-
-  .hotel-lux-img-btn-box {
-    margin-bottom: 72px;
-  }
-
-  .hotel-lux-list-slider {
-    position: absolute;
-    top: 115%;
-    left: 40%;
-    margin-bottom: 0;
+    right: 65px;
+    top: -100px;
   }
 
   .hotel-lux-slider-img {
     max-width: 254px;
     max-height: 254px;
+  }
+
+  .hotel-lux-list-img {
+    margin-bottom: 72px;
+  }
+
+  .hotel-lux-list-slider {
+    position: absolute;
+    top: 90%;
+    left: 41%;
+    margin-bottom: 0;
   }
 }
