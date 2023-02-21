@@ -1,0 +1,369 @@
+/* Task 14 - The second hotel section "1 room for 3 adult */
+
+.hotel-three {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: var(--fon-lemon-color);
+}
+
+@media screen and (max-width: 1023px) {
+  .container-three-hotel {
+    overflow: hidden;
+  }
+}
+
+.hotel-three-pretitle-description {
+  font-family: 'Times New Roman', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(---second-text-color);
+  margin-bottom: 8px;
+  text-align: right;
+}
+.hotel-three-pretitle {
+  font-family: 'Film P3', sans-serif;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: #494848;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  text-align: right;
+}
+.hotel-three-title {
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.05em;
+  color: var(--black-color);
+  margin-bottom: 12px;
+  text-align: right;
+}
+.hotel-three-title-description {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  max-width: 258px;
+  margin-bottom: 32px;
+  margin-left: 83px;
+}
+
+.hotel-three-list-img {
+  display: flex;
+  column-gap: 16px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 5;
+  left: 130px;
+}
+
+.hotel-three-room-img {
+  width: 100%;
+  height: 100%;
+  max-width: 244px;
+  max-height: 322px;
+  margin-right: auto;
+  margin-bottom: 32px;
+  background: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.hotel-three-slider-img {
+  max-width: 194px;
+  max-width: 194px;
+  background: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.hotel-three-list-slider {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 32px;
+  margin-bottom: 20px;
+}
+
+.hotel-three-left-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.hotel-three-right-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.hotel-three-list-btn {
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+}
+
+.hotel-three-item-btn {
+  width: 236px;
+  height: 48px;
+  background: var(--black-color);
+  border: 2px solid var(--fon-lemon-color);
+  border-radius: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  justify-content: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hotel-three-item-btn:hover,
+.hotel-three-item-btn:focus {
+  background-color: var(--white-color);
+  border-color: var(--akzent-yellow-color);
+}
+
+.hotel-three-item-btn:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.hotel-three-link {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1, 25;
+  letter-spacing: 0.02em;
+  color: var(--akzent-yellow-color);
+}
+
+.hotel-three-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1, 25;
+  letter-spacing: 0.02em;
+  color: var(--akzent-yellow-color);
+  background: inherit;
+  border: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .container-three-hotel {
+    position: relative;
+  }
+
+  .hotel-three {
+    padding-top: 64px;
+    padding-bottom: 104px;
+  }
+
+  .hotel-three-pretitle-description {
+    font-size: 32px;
+    line-height: 1.16;
+    margin-bottom: 4px;
+  }
+
+  .hotel-three-pretitle {
+    font-size: 64px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+    margin-bottom: 62px;
+  }
+
+  .hotel-three-letter {
+    letter-spacing: 0em;
+  }
+
+  .hotel-three-title {
+    font-size: 30px;
+    line-height: 1.13;
+    margin-bottom: 16px;
+    margin-left: 542px;
+  }
+
+  .hotel-three-title-description {
+    font-size: 16px;
+    line-height: 1.25;
+    max-width: 439px;
+    max-height: 80px;
+    margin-bottom: 188px;
+    margin-left: 542px;
+  }
+
+  .hotel-three-list-img {
+    display: flex;
+    column-gap: 40px;
+    right: 0;
+    margin-bottom: 48px;
+    margin-right: 0;
+  }
+
+  .hotel-three-room-img {
+    position: absolute;
+    max-width: 400px;
+    max-height: 524px;
+    margin: 0;
+    left: 140px;
+    top: -32px;
+  }
+
+  .hotel-three-img-btn-box {
+    position: relative;
+    right: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .hotel-three-list-btn {
+    position: absolute;
+    top: 260px;
+    right: 100%;
+    transform: translate(100%, -150%);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .hotel-three-list-slider {
+    justify-content: flex-start;
+  }
+
+  .hotel-three-list-img {
+    position: static;
+  }
+
+  .hotel-three-cover {
+    margin-left: 490px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-three-hotel {
+    padding-bottom: 1px;
+  }
+
+  .hotel-three {
+    padding-top: 72px;
+    padding-bottom: 40px;
+  }
+
+  .hotel-three-pretitle-description {
+    font-size: 32px;
+    line-height: 1.16;
+  }
+
+  .hotel-three-pretitle {
+    margin-bottom: 72px;
+  }
+
+  .hotel-three-title {
+    font-size: 36px;
+    line-height: 1.14;
+    margin-bottom: 24px;
+  }
+
+  .hotel-three-title-description {
+    max-width: 400px;
+    max-height: 83px;
+    margin-bottom: 188px;
+  }
+
+  .hotel-three-room-img {
+    max-width: 460px;
+    max-height: 574px;
+  }
+
+  .hotel-three-img-btn-box {
+    margin-bottom: 72px;
+  }
+
+  .hotel-three-list-slider {
+    position: absolute;
+    top: 115%;
+    left: 40%;
+    margin-bottom: 0;
+  }
+
+  .hotel-three-slider-img {
+    max-width: 254px;
+    max-height: 254px;
+  }
+
+  .hotel-three-img-btn-box {
+    position: relative;
+    right: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .hotel-three-list-btn {
+    position: absolute;
+    top: 107%;
+    left: 100%;
+    transform: translate(-100%, -150%);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+}
+
+@media screen and (min-width: 1280px) {
+  .container-three-hotel {
+    padding-bottom: 1px;
+  }
+
+  .hotel-three {
+    padding-top: 72px;
+    padding-bottom: 40px;
+  }
+
+  .hotel-three-pretitle-description {
+    font-size: 32px;
+    line-height: 1.16;
+  }
+
+  .hotel-three-pretitle {
+    margin-bottom: 72px;
+  }
+
+  .hotel-three-title {
+    font-size: 36px;
+    line-height: 1.14;
+    margin-bottom: 24px;
+  }
+
+  .hotel-three-title-description {
+    max-width: 400px;
+    max-height: 83px;
+    margin-bottom: 188px;
+  }
+
+  .hotel-three-room-img {
+    max-width: 460px;
+    max-height: 574px;
+  }
+
+  .hotel-three-img-btn-box {
+    margin-bottom: 72px;
+  }
+
+  .hotel-three-list-slider {
+    position: absolute;
+    top: 115%;
+    left: 40%;
+    margin-bottom: 0;
+  }
+
+  .hotel-three-slider-img {
+    max-width: 254px;
+    max-height: 254px;
+  }
+}

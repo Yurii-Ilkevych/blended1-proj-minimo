@@ -26,6 +26,7 @@
 
 .hero-room-svg-slider {
   fill: var(--akzent-yellow-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-room-item-slider {
   width: 40px;
@@ -115,7 +116,7 @@
   border-radius: 25px;
   padding: 14px 20px;
   background: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: rgba(0, 0, 0, 0.4);
 }
@@ -126,16 +127,22 @@
   border: 2px solid var(--akzent-yellow-color);
 }
 
+.hero-room-svg-slider:hover,
+.hero-room-svg-slider:focus {
+  fill: var(--white-color);
+}
+
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
   screen and (min-resolution: 192dpi) and (max-width: 1023px),
   screen and (min-resolution: 2dppx) and (max-width: 1023px) {
   .hero-room {
-    background-image:linear-gradient(
-      180deg,
-      #000000 0%,
-      rgba(0, 0, 0, 0.55) 54.17%,
-      rgba(0, 0, 0, 0) 100%
-    ), url(../img/task-16/room-one-mob-2x.jpg);
+    background-image: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 54.17%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url(../img/task-16/room-one-mob-2x.jpg);
   }
 }
 
@@ -145,11 +152,12 @@
   .hero-room {
     position: relative;
     background-image: linear-gradient(
-      180deg,
-      #000000 0%,
-      rgba(0, 0, 0, 0.55) 54.17%,
-      rgba(0, 0, 0, 0) 100%
-    ), url(../img/task-16/room-one-tab.jpg);
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 54.17%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url(../img/task-16/room-one-tab.jpg);
     max-width: 1024px;
     padding-top: 225px;
     padding-bottom: 22px;
@@ -220,11 +228,12 @@
     screen and (min-resolution: 2dppx) and (min-width: 1024px) and (max-width: 1279px) {
     .hero-room {
       background-image: linear-gradient(
-      180deg,
-      #000000 0%,
-      rgba(0, 0, 0, 0.55) 54.17%,
-      rgba(0, 0, 0, 0) 100%
-    ), url(../img/task-16/room-one-tab-2x.jpg);
+          180deg,
+          #000000 0%,
+          rgba(0, 0, 0, 0.55) 54.17%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url(../img/task-16/room-one-tab-2x.jpg);
     }
   }
 }
@@ -234,11 +243,12 @@
 @media screen and (min-width: 1280px) {
   .hero-room {
     background-image: linear-gradient(
-      180deg,
-      #000000 0%,
-      rgba(0, 0, 0, 0.55) 54.17%,
-      rgba(0, 0, 0, 0) 100%
-    ), url(../img/task-16/room-one.jpg);
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 54.17%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url(../img/task-16/room-one.jpg);
     padding-top: 265px;
     padding-bottom: 48px;
     max-width: 1280px;
@@ -283,11 +293,12 @@
     screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     .hero-room {
       background-image: linear-gradient(
-      180deg,
-      #000000 0%,
-      rgba(0, 0, 0, 0.55) 54.17%,
-      rgba(0, 0, 0, 0) 100%
-    ), url(../img/task-16/room-one-2x.jpg);
+          180deg,
+          #000000 0%,
+          rgba(0, 0, 0, 0.55) 54.17%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url(../img/task-16/room-one-2x.jpg);
     }
   }
 }

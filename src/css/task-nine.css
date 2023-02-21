@@ -7,7 +7,7 @@
   padding-top: 181px;
   padding-bottom: 20px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(./img/task-9/restaurant-bg-mob.jpg);
+    url(../img/task-9/restaurant-bg-mob.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@
   (min-resolution: 2dppx) {
   .hero-restaurant {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(./img/task-9/restaurant-bg-mob@2x.jpg);
+      url(../img/task-9/restaurant-bg-mob@2x.jpg);
   }
 }
 .bg-rest {
@@ -80,7 +80,7 @@
 }
 
 .rest-map-link::before {
-  content: url(./img/task-9/icon-location.svg);
+  content: url(../img/task-9/icon-location.svg);
   position: absolute;
   width: 20px;
   height: 20px;
@@ -165,7 +165,7 @@
     padding-top: 188px;
     padding-bottom: 15px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(./img/task-9/restaurant-bg-tab.jpg);
+      url(../img/task-9/restaurant-bg-tab.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px) and (max-width: 1279px),
@@ -176,7 +176,7 @@
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(./img/task-9/restaurant-bg-tab@2x.jpg);
+        url(../img/task-9/restaurant-bg-tab@2x.jpg);
     }
   }
 
@@ -207,7 +207,7 @@
   }
 
   .rest-map-link::before {
-    content: url(./img/task-9/icon-location-tab.svg);
+    content: url(../img/task-9/icon-location-tab.svg);
     width: 24px;
     height: 24px;
     left: 10px;
@@ -237,17 +237,17 @@
     padding-top: 164px;
     padding-bottom: 64px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(./img/task-9/restaurant-bg.jpg);
+      url(../img/task-9/restaurant-bg.jpg);
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
     screen and (min-resolution: 192dpi) and (min-width: 1280px),
     screen and (min-resolution: 2dppx) and (min-width: 1280px) {
-    .home-hero {
+    .hero-restaurant {
       background-image: linear-gradient(
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(./img/task-9/restaurant-bg@2x.jpg);
+        url(../img/task-9/restaurant-bg@2x.jpg);
     }
   }
   .rest-hero-title {
@@ -274,7 +274,7 @@
     padding: 8px 8px 8px 44px;
   }
   .rest-map-link::before {
-    content: url(./img/task-9/icon-location-tab.svg);
+    content: url(../img/task-9/icon-location-tab.svg);
     width: 24px;
     height: 24px;
     left: 10px;

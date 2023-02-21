@@ -1,53 +1,22 @@
 
 
 
-.t-modal-backdrop.is-hidden-t {
+/* .t-modal-backdrop.is-hidden-t {
   opacity: 0;
   pointer-events: none;
-   }
+   } */
 
-.t-modal-backdrop {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(46, 47, 66, 0.4);
-  overflow: auto;
 
-opacity: 1;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.t-modal-backdrop.is-hidden-t .t-modal {
+/* .t-modal-backdrop.is-hidden-t .t-modal {
   transform: translate( -50%, -50%) scale(5);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.t-modal-backdrop {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(46, 47, 66, 0.4);
-  overflow: auto;
-}
+} */
 
 .t-modal {
-  box-sizing: border-box;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
+  
   min-height: 668px;
-  padding: 60px 15px;
-  transform: translate(-50%, -50%) scaleX(1);
-  transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  background-color: #fffdee;
 }
 
 .t-modal-close-btn {
@@ -207,7 +176,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #000000;
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 320px) {
   .t-modal {
     width: 414px;
   }
