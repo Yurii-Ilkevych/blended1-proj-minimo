@@ -72,7 +72,7 @@
         margin-bottom: 20px; */
         padding-top: 18px;
         padding-bottom: 20px;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .five-first-text {
@@ -108,7 +108,9 @@
     }
     .foto-hotel-reg{
         width: 245px;
-
+    }
+    .foto-hotel-reg-mobile{
+       height: 245px; 
     }
     .five-shadow{
         border-radius: 2px;
@@ -123,15 +125,17 @@
         position: relative;
         z-index: 5;
         /* bottom: 50px; */
-         right: 180px;;
+         right: 15px;;
     }
 
-    /* .five-none{
-        display: none;
-    } */
+    
     .five-foto-box{
         min-width: 245px;
         min-height: 245px;
+    }
+    
+    .five-hidden{
+        display: none;
     }
 }
 
@@ -196,7 +200,9 @@
         position: relative;
         bottom: 12px;
     } */
-
+    .five-hidden-d-t{
+        display: none;
+    }
     
 }
 
@@ -268,5 +274,8 @@
         position: absolute;
         bottom: 100%;
         transform: translate(0%, 45%);
+    }
+    .five-hidden-d-t{
+        display: none;
     }
 }
