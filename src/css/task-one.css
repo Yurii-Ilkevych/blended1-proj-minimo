@@ -1,4 +1,4 @@
-header {
+/* header {
   position: absolute;
   left: 50%;
   top: 0;
@@ -17,18 +17,42 @@ header {
     padding-top: 24px;
     padding-bottom: 33px;
   }
+} */
+
+.container{
+  position: relative;
 }
 
 .position-header {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
+  z-index: 100;
+  padding: 16px 15px 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1024px) {
+.position-header {
+  padding: 24px 47px 0;
+}
+}
+
+@media screen and (min-width: 1280px) {
+.position-header {
+  padding: 24px 45px 0;
+}
 }
 
 .header__site-name {
   font-family: 'Film P3';
   letter-spacing: 0.3em;
   color: var(--white-color);
+  font-size: 11.25vw;
 }
 
 @media screen and (min-width: 320px) {
@@ -47,13 +71,19 @@ header {
   }
 }
 
-nav {
-  margin-left: auto;
+.nav {
+  margin: 0;
+}
+@media screen and (min-width: 414px) {
+.nav{
+margin-left: 56px;
+}
 }
 
 @media screen and (min-width: 1280px) {
   .nav {
     margin-left: 135px;
+    justify-content: center;
   }
 }
 
@@ -63,6 +93,15 @@ nav {
   align-items: center;
 }
 
+.nav-item:last-child{
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1023px) {
+.mob-mr{
+  margin-right: 26px;
+}
+}
 @media screen and (min-width: 320x) {
   .ml-decstop {
     margin-left: 20px;
@@ -103,7 +142,6 @@ nav {
 
 .nav__link-tel {
   margin-left: 6px;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
@@ -113,6 +151,7 @@ nav {
 
   color: var(--white-color);
 }
+
 
 @media screen and (min-width: 1024px) {
   .nav__link-tel {
