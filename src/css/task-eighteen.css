@@ -295,3 +295,8 @@
     width: 592px;
   }
 }
+
+
+.modal-block{
+  display: block;
+}
