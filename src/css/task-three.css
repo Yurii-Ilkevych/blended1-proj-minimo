@@ -76,9 +76,10 @@
 
 .about-restrong-photo-list {
   position: relative;
-  transform: translateX(69px);
-  right: 0;
+  transform: translateX(15px);
+  right: 0px;
   display: flex;
+  justify-content: flex-end;
   gap: 25px;
   margin-bottom: 25px;
 }
