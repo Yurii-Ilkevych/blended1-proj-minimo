@@ -86,6 +86,11 @@ color: #494848;
     margin-right: 8px;
     fill: var(--brown-color);
 }
+.contcts-list-icon.third-icon{
+    margin-right: 10px;
+    margin-left: 2px;
+}
+
 
 .contacts-map-text{
     font-weight: 400;
@@ -93,7 +98,7 @@ font-size: 16px;
 line-height: 1.25;
 letter-spacing: 0.01em;
 color: #494848;
-padding-right: 41px;
+padding-right: 33px;
 }
 
 .contacts-map {
