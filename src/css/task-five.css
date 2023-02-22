@@ -111,8 +111,9 @@
 
     }
     .five-shadow{
-        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
+        background: #DADADA;
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
             }
     
     .five-swipe{
@@ -144,6 +145,7 @@
     .five-shadow{
         box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
+        background: #DADADA;
             }
     .five-foto-moder{
         width: 400px;
@@ -223,6 +225,7 @@
      .five-shadow{
         box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
+        background: #DADADA;
             }
      .five-container{
         padding-bottom: 197px;
