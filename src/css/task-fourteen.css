@@ -3,11 +3,11 @@
 .hotel-three {
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: var(--fon-lemon-color);
+  background-color: var(--fon-dark-lemon-color);
 }
 
 @media screen and (max-width: 1023px) {
-  .container-three-hotel {
+  .hotel-three {
     overflow: hidden;
   }
 }
@@ -33,7 +33,7 @@
 }
 .hotel-three-title {
   font-family: 'Times New Roman';
-  font-weight: 700;
+  font-weight: bold;
   font-size: 24px;
   line-height: calc(28 / 24);
   letter-spacing: 0.05em;
@@ -154,6 +154,8 @@
   border: none;
 }
 
+/* --------------------TABLET--------------- */
+
 @media screen and (min-width: 1024px) {
   .container-three-hotel {
     position: relative;
@@ -161,7 +163,7 @@
 
   .hotel-three {
     padding-top: 64px;
-    padding-bottom: 104px;
+    padding-bottom: 40px;
   }
 
   .hotel-three-pretitle-description {
@@ -175,34 +177,41 @@
     line-height: 1.08;
     letter-spacing: 0.3em;
     margin-bottom: 62px;
+    position: relative;
+    right: -15px;
   }
 
-  .hotel-three-letter {
+  /* .hotel-three-letter {
     letter-spacing: 0em;
-  }
+  } */
 
   .hotel-three-title {
+    position: relative;
+    right: 25px;
     font-size: 30px;
     line-height: 1.13;
     margin-bottom: 16px;
-    margin-left: 542px;
+    
   }
 
   .hotel-three-title-description {
     font-size: 16px;
     line-height: 1.25;
-    max-width: 439px;
-    max-height: 80px;
-    margin-bottom: 188px;
-    margin-left: 542px;
+    /* height: 83px; */
+    max-width: 400px;
+    margin-bottom: 169px;
+    margin-left: auto;
+    letter-spacing: 0.02em;
+    flex-wrap: nowrap;
   }
 
   .hotel-three-list-img {
     display: flex;
-    column-gap: 40px;
-    right: 0;
-    margin-bottom: 48px;
-    margin-right: 0;
+    column-gap: 35px;
+    
+    margin-bottom: 64px;
+    
+    justify-content: start;
   }
 
   .hotel-three-room-img {
@@ -210,8 +219,9 @@
     max-width: 400px;
     max-height: 524px;
     margin: 0;
-    left: 140px;
-    top: -32px;
+    left: 50px;
+    top: -96px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
 
   .hotel-three-img-btn-box {
@@ -219,17 +229,27 @@
     right: 0;
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content: end;
   }
 
   .hotel-three-list-btn {
     position: absolute;
-    top: 260px;
-    right: 100%;
-    transform: translate(100%, -150%);
+    bottom: -70%;
+    right: -175%;
+    transform: translate(-100%, 150%);
+  }
+
+ 
+
+  .hotel-three-list-slider {
+    position: relative;
+    top: -100%;
+    right: 40%;
+    transform: translate(80%, 85%);
+    margin-bottom: 0;
   }
 }
-
+/* 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .hotel-three-list-slider {
     justify-content: flex-start;
@@ -242,16 +262,18 @@
   .hotel-three-cover {
     margin-left: 490px;
   }
-}
+} */
+
+/* --------------------DESCTOP--------------- */
 
 @media screen and (min-width: 1280px) {
-  .container-three-hotel {
+  /* .container-three-hotel {
     padding-bottom: 1px;
-  }
+  } */
 
   .hotel-three {
     padding-top: 72px;
-    padding-bottom: 40px;
+    padding-bottom: 32px;
   }
 
   .hotel-three-pretitle-description {
@@ -270,6 +292,8 @@
   }
 
   .hotel-three-title-description {
+    position: relative;
+    right: 72px;
     max-width: 400px;
     max-height: 83px;
     margin-bottom: 188px;
@@ -278,44 +302,52 @@
   .hotel-three-room-img {
     max-width: 460px;
     max-height: 574px;
+    left: 80px;
+    top: -110px;
   }
 
   .hotel-three-img-btn-box {
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
   }
 
   .hotel-three-list-slider {
     position: absolute;
-    top: 115%;
-    left: 40%;
+    top: 80%;
+    left: 46%;
     margin-bottom: 0;
   }
 
   .hotel-three-slider-img {
     max-width: 254px;
     max-height: 254px;
+   
+  }
+
+  .hotel-three-list-img {
+ column-gap: 40px;
+ margin-bottom: 80px;
   }
 
   .hotel-three-img-btn-box {
     position: relative;
-    right: 0;
+    right: 12%;
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content: end;
   }
 
   .hotel-three-list-btn {
     position: absolute;
-    top: 107%;
-    left: 100%;
-    transform: translate(-100%, -150%);
+    bottom: -65%;
+    right: -155%;
+    transform: translate(-180%, -180%);
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-}
+/* @media screen and (min-width: 1024px) and (max-width: 1279px) {
+} */
 
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
   .container-three-hotel {
     padding-bottom: 1px;
   }
@@ -366,4 +398,4 @@
     max-width: 254px;
     max-height: 254px;
   }
-}
+} */

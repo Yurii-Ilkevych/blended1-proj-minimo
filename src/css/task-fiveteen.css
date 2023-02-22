@@ -260,6 +260,8 @@
   .two-adult-room-img {
     max-width: 460px;
     max-height: 574px;
+    right: 100px;
+    top: -100px;
   }
 
   .two-adult-img-btn-box {
