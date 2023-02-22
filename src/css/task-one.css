@@ -162,6 +162,7 @@ nav {
   .reviews-mobile-tablet.social-header__list {
    align-items: center;
    justify-content: center;
+   margin-left: 140px;
   }
   .social-header__list>.social__item {
   margin-bottom: 0;
