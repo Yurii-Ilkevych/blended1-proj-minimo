@@ -130,11 +130,14 @@
 
 /* -------------Tablet------------ */
 @media screen and (min-width: 1024px) {
+  .rest-menu-section{
+background-color: var(--fon-dark-lemon-color);
+  }
   .rest-menu-container {
     display: flex;
     padding-top: 58px;
     padding-bottom: 40px;
-    background-color: var(--fon-dark-lemon-color);
+    
   }
 
   .menu-head-text {
