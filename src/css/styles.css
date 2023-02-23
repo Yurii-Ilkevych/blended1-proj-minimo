@@ -116,4 +116,11 @@ body{
 
 
 
-    
+    /* :root {
+        --animate-duration: 3800ms;
+        --animate-delay: 3900ms;
+      } */
+      .animate__flip.animate__animated {
+        --animate-duration: 2s;
+      
+      }
