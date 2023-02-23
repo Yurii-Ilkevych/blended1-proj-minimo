@@ -1,15 +1,14 @@
-
 .footer {
-  background: #0e0c07;
-  display: flex;
-  align-items: center;
 }
 
-.footer.container {
+.footer-wrap.container {
+  display: flex;
+  align-items: center;
   padding-top: 40px;
   padding-right: 30px;
   padding-bottom: 40px;
   padding-left: 59px;
+  background: #0e0c07;
 }
 
 .footer-logo {
@@ -71,9 +70,20 @@
   height: 24px;
 }
 
+@media screen and (min-width: 415px) and (max-width: 1023px) {
+  .footer {
+    background: #0e0c07;
+    margin: 0 auto;
+  }
+}
+
 /* --------------------------------Tablet-------------------------------------- */
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .footer.container {
+  .footer {
+    background: #0e0c07;
+    margin: 0 auto;
+  }
+  .footer-wrap.container {
     padding-top: 80px;
     padding-right: 122px;
     padding-bottom: 80px;
@@ -121,7 +131,12 @@
 
 /* --------------------------------Desktop-------------------------------------- */
 @media screen and (min-width: 1280px) {
-  .footer.container {
+  .footer {
+    background: #0e0c07;
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .footer-wrap.container {
     padding-top: 80px;
     padding-right: 186px;
     padding-bottom: 80px;
@@ -163,18 +178,8 @@
   }
   .footer-social-name {
     display: block;
-  }}
-
-
-
-
-
-
-
-
-
-
-
+  }
+}
 
 /* .footer {
   background-color: var(--footer-color);
