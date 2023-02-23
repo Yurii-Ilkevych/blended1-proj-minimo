@@ -10,7 +10,7 @@
 /* 'Times New Roman 700' */
 @font-face { 
     font-family: "Times New Roman";
-    src: url(./fonts/TimesNewRomanPS-BoldMT.ttf) format("ttf"), 
+    src: url(../fonts/TimesNewRomanPS-BoldMT.ttf) format("ttf"), 
          url(../fonts/TimesNewRomanPS-BoldMT.woff) format("woff");
     font-weight: bold;
 }
@@ -18,7 +18,7 @@
 /* 'Times New Roman 400' */
 @font-face { 
     font-family: "Times New Roman";
-    src: url(./fonts/TimesNewRomanPSMT.ttf) format("ttf"), 
+    src: url(../fonts/TimesNewRomanPSMT.ttf) format("ttf"), 
          url(../fonts/TimesNewRomanPSMT.woff) format("woff");
     font-weight: normal;
 }
