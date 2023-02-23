@@ -3,16 +3,18 @@
 }
 
 .hero-restaurant {
-  position: relative;
-  padding-top: 181px;
-  padding-bottom: 20px;
+  /* position: relative; */
+  /* padding-top: 181px;
+  padding-bottom: 20px; */
+  display: flex;
+  min-width: 414px;
+  height: auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(../img/task-9/restaurant-bg-mob.jpg);
   background-size: cover;
-  background-position: center;
+  /* background-position:initial; */
   background-repeat: no-repeat;
-  max-width: 414px;
-  height: auto;
+
 }
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
@@ -24,6 +26,9 @@
   }
 }
 .bg-rest {
+  position: relative;
+    padding-top: 181px;
+  padding-bottom: 20px;
   text-align: center;
 }
 .rest-hero-textbox {
@@ -62,7 +67,8 @@
 .rest-map {
   position: absolute;
   top: 64px;
-  right: 15px;
+  right: 0;
+  /* right: 15px; */
   display: block;
   font-family: 'Montserrat';
   font-weight: 400;
@@ -162,8 +168,8 @@
 /* -----------------Tablet-------------- */
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .hero-restaurant {
-    padding-top: 188px;
-    padding-bottom: 15px;
+    /* padding-top: 188px; */
+    /* padding-bottom: 15px; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../img/task-9/restaurant-bg-tab.jpg);
   }
@@ -180,6 +186,11 @@
     }
   }
 
+  .bg-rest{
+    padding-top: 188px;
+    padding-bottom: 15px;
+  }
+  
   .rest-hero-title {
     font-size: 128px;
     line-height: 1.075;
@@ -199,7 +210,7 @@
   }
   .rest-map {
     top: 600px;
-    left: 47px;
+    left: 0;
     line-height: calc(20 / 16);
     width: 285px;
     height: 56px;
@@ -234,8 +245,8 @@
 
 @media screen and (min-width: 1280px) {
   .hero-restaurant {
-    padding-top: 164px;
-    padding-bottom: 64px;
+    /* padding-top: 164px;
+    padding-bottom: 64px; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../img/task-9/restaurant-bg.jpg);
   }
@@ -249,6 +260,11 @@
         ),
         url(../img/task-9/restaurant-bg@2x.jpg);
     }
+  }
+
+  .bg-rest{
+        padding-top: 164px;
+    padding-bottom: 64px;
   }
   .rest-hero-title {
     font-size: 128px;
@@ -267,7 +283,7 @@
   }
   .rest-map {
     top: 600px;
-    left: 85px;
+    left: 0;
     line-height: calc(20 / 16);
     width: 285px;
     height: 56px;
