@@ -40,8 +40,7 @@ font-size: 20px;
 line-height: 1.2;
 padding-top: 20px;
 padding-bottom: 20px;
-padding-left: 42px;
-padding-right: 42px;
+width: 100%;
     margin-bottom: 32px;
    background-color: var(--black-color);
 color: var(--white-color);
@@ -118,7 +117,7 @@ letter-spacing: 0.02em;
     margin-bottom: 40px;
 }
 .seventeen-text-size{
-    width: 757px;
+    max-width: 757px;
 }
 .seventeen-margin-yet{
 margin-bottom: 32px;
@@ -130,7 +129,7 @@ margin-bottom: 32px;
     column-gap: 80px;
 }
 .seventeen-size{
-    width: 400px;
+    max-width: 400px;
 }
 .seventeen-margin-last{
     margin-bottom: 40px;

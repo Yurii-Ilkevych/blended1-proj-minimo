@@ -100,26 +100,26 @@
 
        font-size: 12px;
        line-height: 1.25;
-       width: 242px;
+       max-width: 242px;
        margin-bottom: 28px;
        
     }
 
     .five-brown-color{
-        width: 163px;
+        max-width: 163px;
         margin-right: 21px;
     }
     .five-foto-moder{
-        width: 244px;
+        max-width: 244px;
         margin-bottom: 32px;
     }
     .five-foto-hotel{
-        width: 200px;
+        max-width: 200px;
         /* margin-bottom: 304px; */
         margin-bottom: 32px;
     }
     .foto-hotel-reg{
-        width: 245px;
+        max-width: 245px;
     }
     .foto-hotel-reg-mobile{
        height: 245px; 
@@ -142,8 +142,8 @@
 
     
     .five-foto-box{
-        min-width: 245px;
-        min-height: 245px;
+        max-width: 245px;
+        max-height: 245px;
     }
     
     .five-hidden{
