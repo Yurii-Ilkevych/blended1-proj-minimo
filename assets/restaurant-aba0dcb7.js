@@ -1,0 +1,1 @@
+import"./swipe-9ff274c7.js";let e=0;const t=document.querySelector(".slider-row");document.querySelector(".btn-right").addEventListener("click",function(){e=e+269,e>1345&&(e=0),t.style.left=-e+"px"});document.querySelector(".btn-left").addEventListener("click",function(){e=e-269,e<0&&(e=1345),t.style.left=-e+"px"});
