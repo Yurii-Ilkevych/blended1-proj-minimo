@@ -10,11 +10,5 @@ new Swiper(".swiper-four", {
          slidesPerView: 'auto',
          
 
-
-
-
-
-
-
 });
 
